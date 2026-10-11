@@ -343,8 +343,9 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
 String scaledAmount(IngredientLine l, double factor, String decimal) {
   final p = l.parsed;
   if (p.amount == null) return p.unit ?? '';
-  final a = Quantity.formatScaled(p.amount!, p.unit, factor, decimal: decimal);
-  return p.unit == null ? a : '$a ${p.unit}';
+  final (amount, unit) = Quantity.normalize(p.amount! * factor, p.unit);
+  final a = Quantity.formatScaled(amount, unit, 1, decimal: decimal);
+  return unit == null ? a : '$a $unit';
 }
 
 /// Zutaten auswählen und auf die Einkaufsliste setzen. Grundzutaten (Salz,

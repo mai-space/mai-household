@@ -339,6 +339,14 @@ abstract final class Quantity {
     return (v / magnitude).round() * magnitude.toDouble();
   }
 
+  /// Große Mengen in die nächste Einheit: 1500 ml → 1,5 l, 1000 g → 1 kg.
+  static (double, String?) normalize(double amount, String? unit) =>
+      switch (unit) {
+        'ml' when amount >= 1000 => (amount / 1000, 'l'),
+        'g' when amount >= 1000 => (amount / 1000, 'kg'),
+        _ => (amount, unit),
+      };
+
   /// „2 l“, „3“, „½ TL“ oder leer.
   static String label(double? amount, String? unit, {String decimal = ','}) {
     if (amount == null && unit == null) return '';

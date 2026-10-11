@@ -238,12 +238,19 @@ class RecipeRepository {
   ) => [
     for (final l in lines)
       if (!l.isHeading && l.parsed.name.isNotEmpty)
-        ParsedItem(
-          name: TextNorm.capitalize(_stripPreparation(l.parsed.name)),
-          amount: l.parsed.amount == null ? null : l.parsed.amount! * factor,
-          unit: _shoppingUnit(l.parsed.unit),
-        ),
+        _item(l.parsed, factor),
   ];
+
+  static ParsedItem _item(ParsedQuantity q, double factor) {
+    final name = TextNorm.capitalize(_stripPreparation(q.name));
+    final unit = _shoppingUnit(q.unit);
+    // Küchenmaße ohne Einkaufseinheit: Menge weglassen („Salz“ statt „2“).
+    if (q.amount == null || (unit == null && q.unit != null)) {
+      return ParsedItem(name: name);
+    }
+    final (amount, normalized) = Quantity.normalize(q.amount! * factor, unit);
+    return ParsedItem(name: name, amount: amount, unit: normalized);
+  }
 
   /// Küchenmaße (EL, TL, Prise) sind keine Einkaufsmengen.
   static String? _shoppingUnit(String? unit) =>

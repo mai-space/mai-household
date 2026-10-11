@@ -62,8 +62,10 @@ class AppScope extends InheritedWidget {
 
   final AppServices services;
 
+  /// Dienste ändern sich nie — daher ohne Abhängigkeit (auch in
+  /// `initState` nutzbar).
   static AppServices of(BuildContext context) =>
-      context.dependOnInheritedWidgetOfExactType<AppScope>()!.services;
+      context.getInheritedWidgetOfExactType<AppScope>()!.services;
 
   @override
   bool updateShouldNotify(AppScope oldWidget) =>
