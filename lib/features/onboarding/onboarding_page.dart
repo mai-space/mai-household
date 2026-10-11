@@ -104,10 +104,13 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   ListView(
                     padding: const EdgeInsets.all(24),
                     children: [
-                      Icon(
-                        Icons.cottage_outlined,
-                        size: 64,
-                        color: theme.colorScheme.primary,
+                      Align(
+                        alignment: Alignment.centerLeft,
+                        child: Image.asset(
+                          'assets/branding/logo.png',
+                          width: 72,
+                          height: 72,
+                        ),
                       ),
                       const SizedBox(height: 16),
                       Text(
