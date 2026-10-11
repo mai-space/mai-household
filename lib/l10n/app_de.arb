@@ -1,0 +1,642 @@
+{
+  "@@locale": "de",
+  "depProduce": "Obst & Gemüse",
+  "depBakery": "Brot & Backwaren",
+  "depDairy": "Kühlregal",
+  "depMeat": "Fleisch & Wurst",
+  "depFish": "Fisch",
+  "depFrozen": "Tiefkühl",
+  "depPasta": "Nudeln, Reis & Getreide",
+  "depCanned": "Konserven & Fertiges",
+  "depBaking": "Backen",
+  "depSpices": "Gewürze, Öl & Saucen",
+  "depBreakfast": "Frühstück, Kaffee & Tee",
+  "depSweets": "Süßes & Snacks",
+  "depDrinks": "Getränke",
+  "depDrugstore": "Drogerie & Hygiene",
+  "depHousehold": "Haushalt & Putzmittel",
+  "depBaby": "Baby",
+  "depPet": "Tier",
+  "depOther": "Sonstiges",
+  "areaGeneral": "Ganze Wohnung",
+  "areaKitchen": "Küche",
+  "areaBath": "Bad",
+  "areaLiving": "Wohnzimmer",
+  "areaBedroom": "Schlafzimmer",
+  "areaLaundry": "Wäsche",
+  "areaOutside": "Draußen",
+  "tplVacuum": "Staubsaugen",
+  "tplMop": "Boden wischen",
+  "tplDust": "Staub wischen",
+  "tplTrash": "Mülleimer leeren",
+  "tplDishwasher": "Spülmaschine ausräumen",
+  "tplFridge": "Kühlschrank auswischen",
+  "tplStove": "Herd & Ofen reinigen",
+  "tplBathroom": "Bad putzen",
+  "tplTowels": "Handtücher wechseln",
+  "tplDrain": "Abfluss reinigen",
+  "tplBedding": "Bettwäsche wechseln",
+  "tplLaundry": "Wäsche waschen",
+  "tplPlants": "Pflanzen gießen",
+  "tplGlass": "Altglas wegbringen",
+  "tplWindows": "Fenster putzen",
+  "wasteResidual": "Restmüll",
+  "wasteOrganic": "Bio",
+  "wastePaper": "Papier",
+  "wastePackaging": "Gelber Sack",
+  "wasteGlass": "Glas",
+  "wasteOther": "Sonstiges",
+  "choreAdd": "Aufgabe",
+  "choreEdit": "Aufgabe bearbeiten",
+  "choreAll": "Alle",
+  "choreMine": "Meine",
+  "choreAnyone": "Wer Zeit hat",
+  "choreArea": "Bereich",
+  "choreCompleted": "„{name}“ erledigt — danke!",
+  "@choreCompleted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "choreDeleted": "„{name}“ gelöscht",
+  "@choreDeleted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "choreDone": "Erledigt",
+  "choreDoneBy": "{name} hat’s gemacht",
+  "@choreDoneBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "choreDoneByMe": "Hab ich gemacht",
+  "choreDoneTodayAlready": "Heute schon erledigt",
+  "choreDueIn": "in {count} Tagen",
+  "@choreDueIn": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "choreDueSince": "{count, plural, =1{seit gestern dran} other{seit {count} Tagen dran}}",
+  "@choreDueSince": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "choreDueToday": "heute dran",
+  "choreDueTomorrow": "morgen",
+  "choreEffort": "Aufwand",
+  "choreEffortMinutes": "~{count} min",
+  "@choreEffortMinutes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "choreEmptyTitle": "Nichts zu tun",
+  "choreEmptyMessage": "Lege Aufgaben an — z. B. Staubsaugen alle 7 Tage. Die App zeigt dann, wann es wieder dran ist.",
+  "choreEveryDays": "{count, plural, =1{täglich} other{alle {count} Tage}}",
+  "@choreEveryDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "choreFloatingHint": "Gezählt ab der letzten Erledigung — wer später putzt, verschiebt den nächsten Termin.",
+  "choreHistory": "Zuletzt erledigt",
+  "choreName": "Was ist zu tun?",
+  "choreNameHint": "z. B. Bad putzen",
+  "choreNoDate": "Ohne Datum",
+  "choreRemind": "In der Tageszusammenfassung",
+  "choreRemindHint": "Eine gebündelte Erinnerung pro Tag — kein Dauer-Ping.",
+  "choreRepeat": "Wiederholung",
+  "choreRepeatFloating": "Regelmäßig",
+  "choreRepeatWeekly": "Wochentage",
+  "choreRepeatOnce": "Einmalig",
+  "choreRotating": "Reihum",
+  "choreRotatingHint": "Nach jedem Erledigen ist die nächste Person dran (pausierte werden übersprungen).",
+  "choreSectionDue": "Jetzt dran",
+  "choreSectionSoon": "Diese Woche",
+  "choreSectionLater": "Später",
+  "choreSnooze": "Heute nicht",
+  "choreWho": "Wer?",
+  "fairnessTitle": "Wer hat was gemacht",
+  "fairnessWeek": "7 Tage",
+  "fairnessMonth": "30 Tage",
+  "fairnessIntro": "Aufwand in Minuten — zum Ausgleichen, nicht zum Vergleichen.",
+  "fairnessEmpty": "Noch nichts erledigt in diesem Zeitraum.",
+  "fairnessMinutes": "{count} min",
+  "@fairnessMinutes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "fairnessRecent": "Zuletzt",
+  "wasteTitle": "Müllabfuhr",
+  "wasteAdd": "Termine hinzufügen",
+  "wasteImport": "Abfallkalender importieren (.ics)",
+  "wasteImported": "{count, plural, =0{Keine neuen Termine} =1{1 Termin hinzugefügt} other{{count} Termine hinzugefügt}}",
+  "@wasteImported": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "wasteEmptyTitle": "Noch keine Abfuhrtermine",
+  "wasteEmptyMessage": "Lade den Abfallkalender deiner Stadt als .ics herunter und importiere ihn — oder trage den Rhythmus selbst ein. Erinnerung kommt am Vorabend.",
+  "wasteFirstDate": "Nächste Abholung",
+  "wasteRepeat": "Rhythmus",
+  "wasteOnce": "Einmalig",
+  "wasteWeekly": "Wöchentlich",
+  "wasteBiweekly": "Alle 2 Wochen",
+  "wasteFourWeekly": "Alle 4 Wochen",
+  "wasteToday": "Heute wird abgeholt",
+  "wasteTomorrow": "Morgen früh rausstellen",
+  "wasteNobody": "Wer Zeit hat",
+  "wasteAssign": "{name} stellt raus",
+  "@wasteAssign": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "wasteDeleteFuture": "Alle künftigen Termine löschen",
+  "appTitle": "Haushalt",
+  "commonAdd": "Hinzufügen",
+  "commonCancel": "Abbrechen",
+  "commonDelete": "Löschen",
+  "commonEdit": "Bearbeiten",
+  "commonNext": "Weiter",
+  "commonRename": "Umbenennen",
+  "commonSave": "Speichern",
+  "commonUndo": "Rückgängig",
+  "tabToday": "Heute",
+  "tabShopping": "Einkauf",
+  "tabChores": "Aufgaben",
+  "tabKitchen": "Küche",
+  "householdTitle": "Haushalt",
+  "householdPeople": "Personen",
+  "memberMe": "{name} (ich)",
+  "@memberMe": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "memberAdd": "Person hinzufügen",
+  "memberAddHint": "Auch ohne eigenes Handy, z. B. Kinder",
+  "memberPaused": "Pausiert (z. B. Urlaub)",
+  "memberPausedHint": "Wird bei „Reihum“ übersprungen",
+  "memberRemove": "Aus dem Haushalt entfernen",
+  "householdSharing": "Teilen im WLAN",
+  "householdSharingIntro": "Ohne Konto und ohne Cloud: Geräte im selben WLAN gleichen sich direkt und verschlüsselt ab, solange die App offen ist.",
+  "householdLeave": "Haushalt verlassen",
+  "householdLeaveHint": "Daten bleiben auf diesem Gerät, Teilen endet",
+  "householdLeaveConfirm": "Dieses Gerät gleicht danach nicht mehr mit den anderen ab. Die Einträge bleiben hier als eigene Kopie erhalten.",
+  "householdReminders": "Erinnerungen",
+  "remindersEnabled": "Erinnerungen",
+  "remindersHint": "Eine Tageszusammenfassung und Müll am Vorabend — sonst nichts.",
+  "remindersDenied": "Benachrichtigungen sind in den Systemeinstellungen ausgeschaltet.",
+  "remindersSummary": "Tageszusammenfassung",
+  "remindersWaste": "Müll-Erinnerung (Vorabend)",
+  "householdAbout": "Über die App",
+  "householdPrivacy": "Alle Daten bleiben auf euren Geräten. Kein Konto, kein Server, keine Werbung. Geteilt wird nur direkt zwischen euren Geräten im selben WLAN, verschlüsselt mit einem Schlüssel aus dem QR-Code.",
+  "shareInviteTitle": "Gerät hinzufügen",
+  "shareInviteSubtitle": "QR-Code zeigen",
+  "shareInviteIntro": "Öffne die App auf dem anderen Handy, wähle „QR-Code scannen“ und halte es hierauf. Beide Geräte müssen im selben WLAN sein.",
+  "shareNoWifi": "Kein WLAN gefunden. Verbinde beide Geräte mit demselben WLAN.",
+  "shareWaiting": "Warte auf das andere Gerät …",
+  "shareJoined": "{name} ist dabei!",
+  "@shareJoined": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "shareSameWifi": "Gleiches WLAN, App auf beiden Geräten offen",
+  "shareSecurityNote": "Der Code enthält den Schlüssel eures Haushalts. Zeige ihn nur Menschen, die dazugehören.",
+  "scanTitle": "QR-Code scannen",
+  "scanSubtitle": "Einem Haushalt beitreten oder direkt abgleichen",
+  "scanHint": "Auf dem anderen Gerät: Haushalt → Gerät hinzufügen",
+  "joinTitle": "Haushalt von {name} beitreten",
+  "@joinTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "joinKeepQuestion": "Auf diesem Gerät gibt es schon Einträge. Sollen sie in den gemeinsamen Haushalt übernommen werden?",
+  "joinKeepMine": "Übernehmen",
+  "joinDiscardMine": "Verwerfen",
+  "joinConnecting": "Verbinde …",
+  "joinSuccess": "Verbunden mit {name}",
+  "@joinSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "joinSavedNotReached": "Beigetreten. Das andere Gerät war gerade nicht erreichbar — abgeglichen wird, sobald beide im selben WLAN sind.",
+  "syncOff": "Noch nicht geteilt",
+  "syncSearching": "Suche Geräte im WLAN …",
+  "syncNearby": "{count, plural, =1{1 Gerät verbunden} other{{count} Geräte verbunden}}",
+  "@syncNearby": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "syncNever": "Noch nie abgeglichen",
+  "syncLast": "Zuletzt abgeglichen: {time}",
+  "@syncLast": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "syncNow": "Jetzt abgleichen",
+  "syncDone": "{count, plural, =0{Alles aktuell} =1{1 Änderung übernommen} other{{count} Änderungen übernommen}}",
+  "@syncDone": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "syncDevice": "Gerät",
+  "syncLive": "Live mit anderen Geräten",
+  "onboardingWelcome": "Willkommen zu Hause",
+  "onboardingIntro": "Einkaufsliste, Haushaltsaufgaben und euer Rezeptbuch — an einem Ort, ohne Konto, alles bleibt bei euch.",
+  "onboardingName": "Wie heißt du?",
+  "onboardingStart": "Neuen Haushalt einrichten",
+  "onboardingJoin": "Bestehendem Haushalt beitreten",
+  "onboardingJoinHint": "Jemand aus deinem Haushalt nutzt die App schon? Dann scanne den QR-Code von dessen Gerät.",
+  "onboardingStores": "Wo kauft ihr ein?",
+  "onboardingStoresHint": "Artikel lassen sich einem Laden zuordnen; im Laden siehst du sie in Gang-Reihenfolge.",
+  "onboardingStoresMore": "Weitere Läden kannst du später hinzufügen.",
+  "onboardingChores": "Was fällt bei euch an?",
+  "onboardingChoresHint": "Antippen, was passt. Intervalle lassen sich später ändern.",
+  "onboardingFinish": "Los geht’s",
+  "kitchenRecipes": "Rezepte",
+  "kitchenPlan": "Wochenplan",
+  "recipeAdd": "Rezept",
+  "recipeEdit": "Rezept bearbeiten",
+  "recipeAll": "Alle",
+  "recipeFavorites": "Lieblinge",
+  "recipeFavorite": "Liebling",
+  "recipeNewCollection": "Sammlung",
+  "recipeSearch": "Rezept oder Zutat suchen",
+  "recipeEmptyTitle": "Euer Rezeptbuch",
+  "recipeEmptyMessage": "Schreib eure Lieblingsrezepte auf — oder füge ein ganzes Rezept als Text ein. Familiengeschichten passen auch dazu.",
+  "recipeNoMatch": "Nichts gefunden",
+  "recipeServings": "{count, plural, =1{1 Portion} other{{count} Portionen}}",
+  "@recipeServings": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recipeServingsLabel": "Portionen",
+  "recipeMinutes": "{count} min",
+  "@recipeMinutes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recipeTitle": "Name des Gerichts",
+  "recipeNeedsTitle": "Bitte gib dem Rezept einen Namen.",
+  "recipeIngredients": "Zutaten",
+  "recipeIngredientsHint": "Eine pro Zeile, in der Reihenfolge der Verwendung:\n200 g Mehl\n2 Eier\nFür die Soße:",
+  "recipeSteps": "Zubereitung",
+  "recipeStepsHint": "Schritte durch eine Leerzeile trennen. Zeiten wie „20 Minuten“ werden im Kochmodus zum Timer.",
+  "recipeMoreDetails": "Mehr Details (Zeiten, Tipps, Geschichte …)",
+  "recipePrep": "Vorbereiten",
+  "recipeCook": "Kochen",
+  "recipeRest": "Ruhen",
+  "recipeEasy": "Leicht",
+  "recipeMedium": "Mittel",
+  "recipeHard": "Anspruchsvoll",
+  "recipeTags": "Schlagworte",
+  "recipeTagsHint": "z. B. vegetarisch, Sommer, italienisch",
+  "recipeTips": "Tipps & Tricks",
+  "recipeStory": "Geschichte zum Rezept",
+  "recipeStoryHint": "Woran erinnert euch das Gericht? Von wem stammt es?",
+  "recipeSource": "Quelle",
+  "recipeSourceLabel": "Quelle: {name}",
+  "@recipeSourceLabel": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePasteTitle": "Ganzes Rezept einfügen",
+  "recipePasteHint": "Text einfügen — Zutaten und Zubereitung werden automatisch erkannt.",
+  "recipePasteApply": "Übernehmen",
+  "recipeGone": "Dieses Rezept gibt es nicht mehr.",
+  "recipeDeleted": "„{name}“ gelöscht",
+  "@recipeDeleted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePlan": "Im Wochenplan einplanen",
+  "recipeToList": "Einkaufen",
+  "recipeCookNow": "Kochen",
+  "recipeToListTitle": "Was fehlt euch?",
+  "recipeToListHint": "Abhaken, was ihr schon da habt. Gleiche Artikel auf der Liste werden zusammengeführt.",
+  "recipeToListConfirm": "{count, plural, =1{1 Zutat auf die Liste} other{{count} Zutaten auf die Liste}}",
+  "@recipeToListConfirm": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cookStep": "Schritt",
+  "cookStepOf": "{a} / {b}",
+  "@cookStepOf": {
+    "placeholders": {
+      "a": {
+        "type": "int"
+      },
+      "b": {
+        "type": "int"
+      }
+    }
+  },
+  "cookBack": "Zurück",
+  "cookNext": "Weiter",
+  "cookFinish": "Guten Appetit!",
+  "planAdd": "Gericht einplanen",
+  "planAdded": "„{name}“ eingeplant",
+  "@planAdded": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "planFreeText": "„{name}“ eintragen",
+  "@planFreeText": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "planPickHint": "Rezept suchen oder z. B. „Pizza bestellen“",
+  "planToday": "Heute",
+  "planWeekToList": "Zutaten der Woche einkaufen",
+  "planWeekSource": "Wochenplan",
+  "planNothingToBuy": "In dieser Woche sind keine Rezepte eingeplant.",
+  "shopAddHint": "Was fehlt? z. B. „2 l Milch, Eier“",
+  "shopVoiceTooltip": "Per Sprache hinzufügen",
+  "shopAdded": "{count, plural, =0{Nichts hinzugefügt} =1{1 Artikel auf der Liste} other{{count} Artikel auf der Liste}}",
+  "@shopAdded": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "shopAddedNames": "Auf der Liste: {name}",
+  "@shopAddedNames": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "shopAllStores": "Alle",
+  "shopAmount": "Menge",
+  "shopUnit": "Einheit",
+  "shopNote": "Notiz",
+  "shopItemName": "Artikel",
+  "shopAnyStore": "Egal wo",
+  "shopWhere": "Wo kaufen?",
+  "shopUsuallyAt": "Meist bei {name} gekauft",
+  "@shopUsuallyAt": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "shopDepartment": "Abteilung",
+  "shopDepartmentHint": "Wird für diesen Artikel gemerkt — auch auf den anderen Geräten.",
+  "shopStaple": "Immer da haben",
+  "shopStapleHint": "Erscheint als Vorschlag, wenn es länger nicht gekauft wurde.",
+  "shopDeleted": "„{name}“ gelöscht",
+  "@shopDeleted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "shopFor": "für {name}",
+  "@shopFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "shopManageStores": "Läden & Gänge",
+  "shopClearDone": "Erledigte entfernen",
+  "shopCleared": "{count, plural, =0{Nichts zu entfernen} =1{1 erledigter Artikel entfernt} other{{count} erledigte Artikel entfernt}}",
+  "@shopCleared": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "shopGoShopping": "Einkaufen",
+  "shopGoShoppingAt": "Einkaufen bei {name}",
+  "@shopGoShoppingAt": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "shopWhichStore": "Wo kaufst du ein?",
+  "shopEmptyTitle": "Alles da!",
+  "shopEmptyMessage": "Tippe oben, was fehlt — oder sag es einfach: „Milch, Eier und Spülmittel bei Rewe“.",
+  "shopVoiceButton": "Sprechen",
+  "shopVoiceTitle": "Was fehlt?",
+  "shopVoiceHint": "Zum Beispiel: „Zwei Liter Milch, Eier und Spülmittel bei Rewe“",
+  "shopOtherHint": "Tippe auf ⋯ und wähle eine Abteilung — die App merkt es sich.",
+  "shopDoneSection": "Erledigt ({count})",
+  "@shopDoneSection": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "shopRestock": "Bald wieder nötig:",
+  "shopNotFoundAt": "Gab’s nicht bei {name}",
+  "@shopNotFoundAt": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "shopLastStore": "letztem Laden",
+  "storeModeTitle": "Bei {name}",
+  "@storeModeTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "storeModeDone": "Fertig",
+  "storeModeAllDone": "Alles im Wagen!",
+  "storeModeNotFound": "Gab’s nicht",
+  "storeModeCart": "Im Wagen ({count})",
+  "@storeModeCart": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "storeModeLeft": "{count, plural, =1{1 Artikel ist noch offen.} other{{count} Artikel sind noch offen.}}",
+  "@storeModeLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "storeModeMoveTo": "Für {name} vormerken",
+  "@storeModeMoveTo": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "storeModeKeep": "Auf der Liste lassen",
+  "storesAdd": "Laden hinzufügen",
+  "storesAddHint": "z. B. Lidl, Edeka, dm, Wochenmarkt",
+  "storesIntro": "Halte gedrückt und ziehe, um die Reihenfolge zu ändern. Tippe auf einen Laden für Name, Farbe und Gänge.",
+  "storesOpen": "{count} offen",
+  "@storesOpen": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "storesDeleted": "{name} gelöscht",
+  "@storesDeleted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "storesAisles": "Gang-Reihenfolge",
+  "storesAislesHint": "Lernt beim Einkaufen von selbst mit. Hier kannst du sie auch selbst ziehen.",
+  "storesAislesOf": "Gänge bei {name}",
+  "@storesAislesOf": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "storesDepartments": "Abteilungen",
+  "storesDepartmentsHint": "Reihenfolge der Ansicht „Alle“. Eigene Abteilungen mit +.",
+  "storesAddDepartment": "Abteilung hinzufügen",
+  "voiceListening": "Ich höre zu …",
+  "voiceStarting": "Einen Moment …",
+  "voiceUnavailable": "Spracherkennung ist auf diesem Gerät nicht verfügbar. Tippe es einfach:",
+  "voiceError": "Das hat nicht geklappt. Nochmal versuchen oder tippen:",
+  "voiceTypeInstead": "Milch, Eier, Brot …",
+  "voiceRetry": "Nochmal",
+  "voiceDone": "Fertig",
+  "voiceNothing": "Ich habe keinen Artikel verstanden.",
+  "todayMorning": "Guten Morgen, {name}",
+  "@todayMorning": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "todayDay": "Hallo, {name}",
+  "@todayDay": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "todayEvening": "Guten Abend, {name}",
+  "@todayEvening": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "todayMeal": "Heute gibt’s",
+  "todayChores": "Heute dran",
+  "todayAll": "Alle",
+  "todayNothingDue": "Nichts Dringendes — genießt den Tag.",
+  "todayShoppingEmpty": "Einkaufsliste ist leer",
+  "todayShoppingOpen": "{count, plural, =1{1 Artikel auf der Liste} other{{count} Artikel auf der Liste}}",
+  "@todayShoppingOpen": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "reminderChannel": "Haushalt",
+  "reminderChoresTitle": "{count, plural, =1{Heute dran: 1 Aufgabe} other{Heute dran: {count} Aufgaben}}",
+  "@reminderChoresTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "reminderWasteTitle": "Morgen ist Abholung"
+}

@@ -1,0 +1,49 @@
+{
+  "todayMorning": "Guten Morgen, {name}",
+  "@todayMorning": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "todayDay": "Hallo, {name}",
+  "@todayDay": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "todayEvening": "Guten Abend, {name}",
+  "@todayEvening": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "todayMeal": "Heute gibt’s",
+  "todayChores": "Heute dran",
+  "todayAll": "Alle",
+  "todayNothingDue": "Nichts Dringendes — genießt den Tag.",
+  "todayShoppingEmpty": "Einkaufsliste ist leer",
+  "todayShoppingOpen": "{count, plural, =1{1 Artikel auf der Liste} other{{count} Artikel auf der Liste}}",
+  "@todayShoppingOpen": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "reminderChannel": "Haushalt",
+  "reminderChoresTitle": "{count, plural, =1{Heute dran: 1 Aufgabe} other{Heute dran: {count} Aufgaben}}",
+  "@reminderChoresTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "reminderWasteTitle": "Morgen ist Abholung"
+}

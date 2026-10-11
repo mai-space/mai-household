@@ -1,0 +1,111 @@
+{
+  "householdTitle": "Haushalt",
+  "householdPeople": "Personen",
+  "memberMe": "{name} (ich)",
+  "@memberMe": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "memberAdd": "Person hinzufügen",
+  "memberAddHint": "Auch ohne eigenes Handy, z. B. Kinder",
+  "memberPaused": "Pausiert (z. B. Urlaub)",
+  "memberPausedHint": "Wird bei „Reihum“ übersprungen",
+  "memberRemove": "Aus dem Haushalt entfernen",
+  "householdSharing": "Teilen im WLAN",
+  "householdSharingIntro": "Ohne Konto und ohne Cloud: Geräte im selben WLAN gleichen sich direkt und verschlüsselt ab, solange die App offen ist.",
+  "householdLeave": "Haushalt verlassen",
+  "householdLeaveHint": "Daten bleiben auf diesem Gerät, Teilen endet",
+  "householdLeaveConfirm": "Dieses Gerät gleicht danach nicht mehr mit den anderen ab. Die Einträge bleiben hier als eigene Kopie erhalten.",
+  "householdReminders": "Erinnerungen",
+  "remindersEnabled": "Erinnerungen",
+  "remindersHint": "Eine Tageszusammenfassung und Müll am Vorabend — sonst nichts.",
+  "remindersDenied": "Benachrichtigungen sind in den Systemeinstellungen ausgeschaltet.",
+  "remindersSummary": "Tageszusammenfassung",
+  "remindersWaste": "Müll-Erinnerung (Vorabend)",
+  "householdAbout": "Über die App",
+  "householdPrivacy": "Alle Daten bleiben auf euren Geräten. Kein Konto, kein Server, keine Werbung. Geteilt wird nur direkt zwischen euren Geräten im selben WLAN, verschlüsselt mit einem Schlüssel aus dem QR-Code.",
+  "shareInviteTitle": "Gerät hinzufügen",
+  "shareInviteSubtitle": "QR-Code zeigen",
+  "shareInviteIntro": "Öffne die App auf dem anderen Handy, wähle „QR-Code scannen“ und halte es hierauf. Beide Geräte müssen im selben WLAN sein.",
+  "shareNoWifi": "Kein WLAN gefunden. Verbinde beide Geräte mit demselben WLAN.",
+  "shareWaiting": "Warte auf das andere Gerät …",
+  "shareJoined": "{name} ist dabei!",
+  "@shareJoined": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "shareSameWifi": "Gleiches WLAN, App auf beiden Geräten offen",
+  "shareSecurityNote": "Der Code enthält den Schlüssel eures Haushalts. Zeige ihn nur Menschen, die dazugehören.",
+  "scanTitle": "QR-Code scannen",
+  "scanSubtitle": "Einem Haushalt beitreten oder direkt abgleichen",
+  "scanHint": "Auf dem anderen Gerät: Haushalt → Gerät hinzufügen",
+  "joinTitle": "Haushalt von {name} beitreten",
+  "@joinTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "joinKeepQuestion": "Auf diesem Gerät gibt es schon Einträge. Sollen sie in den gemeinsamen Haushalt übernommen werden?",
+  "joinKeepMine": "Übernehmen",
+  "joinDiscardMine": "Verwerfen",
+  "joinConnecting": "Verbinde …",
+  "joinSuccess": "Verbunden mit {name}",
+  "@joinSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "joinSavedNotReached": "Beigetreten. Das andere Gerät war gerade nicht erreichbar — abgeglichen wird, sobald beide im selben WLAN sind.",
+  "syncOff": "Noch nicht geteilt",
+  "syncSearching": "Suche Geräte im WLAN …",
+  "syncNearby": "{count, plural, =1{1 Gerät verbunden} other{{count} Geräte verbunden}}",
+  "@syncNearby": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "syncNever": "Noch nie abgeglichen",
+  "syncLast": "Zuletzt abgeglichen: {time}",
+  "@syncLast": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "syncNow": "Jetzt abgleichen",
+  "syncDone": "{count, plural, =0{Alles aktuell} =1{1 Änderung übernommen} other{{count} Änderungen übernommen}}",
+  "@syncDone": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "syncDevice": "Gerät",
+  "syncLive": "Live mit anderen Geräten",
+  "onboardingWelcome": "Willkommen zu Hause",
+  "onboardingIntro": "Einkaufsliste, Haushaltsaufgaben und euer Rezeptbuch — an einem Ort, ohne Konto, alles bleibt bei euch.",
+  "onboardingName": "Wie heißt du?",
+  "onboardingStart": "Neuen Haushalt einrichten",
+  "onboardingJoin": "Bestehendem Haushalt beitreten",
+  "onboardingJoinHint": "Jemand aus deinem Haushalt nutzt die App schon? Dann scanne den QR-Code von dessen Gerät.",
+  "onboardingStores": "Wo kauft ihr ein?",
+  "onboardingStoresHint": "Artikel lassen sich einem Laden zuordnen; im Laden siehst du sie in Gang-Reihenfolge.",
+  "onboardingStoresMore": "Weitere Läden kannst du später hinzufügen.",
+  "onboardingChores": "Was fällt bei euch an?",
+  "onboardingChoresHint": "Antippen, was passt. Intervalle lassen sich später ändern.",
+  "onboardingFinish": "Los geht’s"
+}

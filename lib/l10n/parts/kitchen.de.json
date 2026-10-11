@@ -1,0 +1,120 @@
+{
+  "kitchenRecipes": "Rezepte",
+  "kitchenPlan": "Wochenplan",
+  "recipeAdd": "Rezept",
+  "recipeEdit": "Rezept bearbeiten",
+  "recipeAll": "Alle",
+  "recipeFavorites": "Lieblinge",
+  "recipeFavorite": "Liebling",
+  "recipeNewCollection": "Sammlung",
+  "recipeSearch": "Rezept oder Zutat suchen",
+  "recipeEmptyTitle": "Euer Rezeptbuch",
+  "recipeEmptyMessage": "Schreib eure Lieblingsrezepte auf — oder füge ein ganzes Rezept als Text ein. Familiengeschichten passen auch dazu.",
+  "recipeNoMatch": "Nichts gefunden",
+  "recipeServings": "{count, plural, =1{1 Portion} other{{count} Portionen}}",
+  "@recipeServings": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recipeServingsLabel": "Portionen",
+  "recipeMinutes": "{count} min",
+  "@recipeMinutes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recipeTitle": "Name des Gerichts",
+  "recipeNeedsTitle": "Bitte gib dem Rezept einen Namen.",
+  "recipeIngredients": "Zutaten",
+  "recipeIngredientsHint": "Eine pro Zeile, in der Reihenfolge der Verwendung:\n200 g Mehl\n2 Eier\nFür die Soße:",
+  "recipeSteps": "Zubereitung",
+  "recipeStepsHint": "Schritte durch eine Leerzeile trennen. Zeiten wie „20 Minuten“ werden im Kochmodus zum Timer.",
+  "recipeMoreDetails": "Mehr Details (Zeiten, Tipps, Geschichte …)",
+  "recipePrep": "Vorbereiten",
+  "recipeCook": "Kochen",
+  "recipeRest": "Ruhen",
+  "recipeEasy": "Leicht",
+  "recipeMedium": "Mittel",
+  "recipeHard": "Anspruchsvoll",
+  "recipeTags": "Schlagworte",
+  "recipeTagsHint": "z. B. vegetarisch, Sommer, italienisch",
+  "recipeTips": "Tipps & Tricks",
+  "recipeStory": "Geschichte zum Rezept",
+  "recipeStoryHint": "Woran erinnert euch das Gericht? Von wem stammt es?",
+  "recipeSource": "Quelle",
+  "recipeSourceLabel": "Quelle: {name}",
+  "@recipeSourceLabel": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePasteTitle": "Ganzes Rezept einfügen",
+  "recipePasteHint": "Text einfügen — Zutaten und Zubereitung werden automatisch erkannt.",
+  "recipePasteApply": "Übernehmen",
+  "recipeGone": "Dieses Rezept gibt es nicht mehr.",
+  "recipeDeleted": "„{name}“ gelöscht",
+  "@recipeDeleted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "recipePlan": "Im Wochenplan einplanen",
+  "recipeToList": "Einkaufen",
+  "recipeCookNow": "Kochen",
+  "recipeToListTitle": "Was fehlt euch?",
+  "recipeToListHint": "Abhaken, was ihr schon da habt. Gleiche Artikel auf der Liste werden zusammengeführt.",
+  "recipeToListConfirm": "{count, plural, =1{1 Zutat auf die Liste} other{{count} Zutaten auf die Liste}}",
+  "@recipeToListConfirm": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cookStep": "Schritt",
+  "cookStepOf": "{a} / {b}",
+  "@cookStepOf": {
+    "placeholders": {
+      "a": {
+        "type": "int"
+      },
+      "b": {
+        "type": "int"
+      }
+    }
+  },
+  "cookBack": "Zurück",
+  "cookNext": "Weiter",
+  "cookFinish": "Guten Appetit!",
+  "planAdd": "Gericht einplanen",
+  "planAdded": "„{name}“ eingeplant",
+  "@planAdded": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "planFreeText": "„{name}“ eintragen",
+  "@planFreeText": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "planPickHint": "Rezept suchen oder z. B. „Pizza bestellen“",
+  "planToday": "Heute",
+  "planWeekToList": "Zutaten der Woche einkaufen",
+  "planWeekSource": "Wochenplan",
+  "planNothingToBuy": "In dieser Woche sind keine Rezepte eingeplant."
+}

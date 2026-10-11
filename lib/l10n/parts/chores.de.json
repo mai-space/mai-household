@@ -1,0 +1,135 @@
+{
+  "choreAdd": "Aufgabe",
+  "choreEdit": "Aufgabe bearbeiten",
+  "choreAll": "Alle",
+  "choreMine": "Meine",
+  "choreAnyone": "Wer Zeit hat",
+  "choreArea": "Bereich",
+  "choreCompleted": "„{name}“ erledigt — danke!",
+  "@choreCompleted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "choreDeleted": "„{name}“ gelöscht",
+  "@choreDeleted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "choreDone": "Erledigt",
+  "choreDoneBy": "{name} hat’s gemacht",
+  "@choreDoneBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "choreDoneByMe": "Hab ich gemacht",
+  "choreDoneTodayAlready": "Heute schon erledigt",
+  "choreDueIn": "in {count} Tagen",
+  "@choreDueIn": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "choreDueSince": "{count, plural, =1{seit gestern dran} other{seit {count} Tagen dran}}",
+  "@choreDueSince": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "choreDueToday": "heute dran",
+  "choreDueTomorrow": "morgen",
+  "choreEffort": "Aufwand",
+  "choreEffortMinutes": "~{count} min",
+  "@choreEffortMinutes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "choreEmptyTitle": "Nichts zu tun",
+  "choreEmptyMessage": "Lege Aufgaben an — z. B. Staubsaugen alle 7 Tage. Die App zeigt dann, wann es wieder dran ist.",
+  "choreEveryDays": "{count, plural, =1{täglich} other{alle {count} Tage}}",
+  "@choreEveryDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "choreFloatingHint": "Gezählt ab der letzten Erledigung — wer später putzt, verschiebt den nächsten Termin.",
+  "choreHistory": "Zuletzt erledigt",
+  "choreName": "Was ist zu tun?",
+  "choreNameHint": "z. B. Bad putzen",
+  "choreNoDate": "Ohne Datum",
+  "choreRemind": "In der Tageszusammenfassung",
+  "choreRemindHint": "Eine gebündelte Erinnerung pro Tag — kein Dauer-Ping.",
+  "choreRepeat": "Wiederholung",
+  "choreRepeatFloating": "Regelmäßig",
+  "choreRepeatWeekly": "Wochentage",
+  "choreRepeatOnce": "Einmalig",
+  "choreRotating": "Reihum",
+  "choreRotatingHint": "Nach jedem Erledigen ist die nächste Person dran (pausierte werden übersprungen).",
+  "choreSectionDue": "Jetzt dran",
+  "choreSectionSoon": "Diese Woche",
+  "choreSectionLater": "Später",
+  "choreSnooze": "Heute nicht",
+  "choreWho": "Wer?",
+  "fairnessTitle": "Wer hat was gemacht",
+  "fairnessWeek": "7 Tage",
+  "fairnessMonth": "30 Tage",
+  "fairnessIntro": "Aufwand in Minuten — zum Ausgleichen, nicht zum Vergleichen.",
+  "fairnessEmpty": "Noch nichts erledigt in diesem Zeitraum.",
+  "fairnessMinutes": "{count} min",
+  "@fairnessMinutes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "fairnessRecent": "Zuletzt",
+  "wasteTitle": "Müllabfuhr",
+  "wasteAdd": "Termine hinzufügen",
+  "wasteImport": "Abfallkalender importieren (.ics)",
+  "wasteImported": "{count, plural, =0{Keine neuen Termine} =1{1 Termin hinzugefügt} other{{count} Termine hinzugefügt}}",
+  "@wasteImported": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "wasteEmptyTitle": "Noch keine Abfuhrtermine",
+  "wasteEmptyMessage": "Lade den Abfallkalender deiner Stadt als .ics herunter und importiere ihn — oder trage den Rhythmus selbst ein. Erinnerung kommt am Vorabend.",
+  "wasteFirstDate": "Nächste Abholung",
+  "wasteRepeat": "Rhythmus",
+  "wasteOnce": "Einmalig",
+  "wasteWeekly": "Wöchentlich",
+  "wasteBiweekly": "Alle 2 Wochen",
+  "wasteFourWeekly": "Alle 4 Wochen",
+  "wasteToday": "Heute wird abgeholt",
+  "wasteTomorrow": "Morgen früh rausstellen",
+  "wasteNobody": "Wer Zeit hat",
+  "wasteAssign": "{name} stellt raus",
+  "@wasteAssign": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "wasteDeleteFuture": "Alle künftigen Termine löschen"
+}

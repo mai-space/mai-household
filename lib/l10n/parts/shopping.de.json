@@ -1,0 +1,175 @@
+{
+  "shopAddHint": "Was fehlt? z. B. „2 l Milch, Eier“",
+  "shopVoiceTooltip": "Per Sprache hinzufügen",
+  "shopAdded": "{count, plural, =0{Nichts hinzugefügt} =1{1 Artikel auf der Liste} other{{count} Artikel auf der Liste}}",
+  "@shopAdded": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "shopAddedNames": "Auf der Liste: {name}",
+  "@shopAddedNames": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "shopAllStores": "Alle",
+  "shopAmount": "Menge",
+  "shopUnit": "Einheit",
+  "shopNote": "Notiz",
+  "shopItemName": "Artikel",
+  "shopAnyStore": "Egal wo",
+  "shopWhere": "Wo kaufen?",
+  "shopUsuallyAt": "Meist bei {name} gekauft",
+  "@shopUsuallyAt": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "shopDepartment": "Abteilung",
+  "shopDepartmentHint": "Wird für diesen Artikel gemerkt — auch auf den anderen Geräten.",
+  "shopStaple": "Immer da haben",
+  "shopStapleHint": "Erscheint als Vorschlag, wenn es länger nicht gekauft wurde.",
+  "shopDeleted": "„{name}“ gelöscht",
+  "@shopDeleted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "shopFor": "für {name}",
+  "@shopFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "shopManageStores": "Läden & Gänge",
+  "shopClearDone": "Erledigte entfernen",
+  "shopCleared": "{count, plural, =0{Nichts zu entfernen} =1{1 erledigter Artikel entfernt} other{{count} erledigte Artikel entfernt}}",
+  "@shopCleared": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "shopGoShopping": "Einkaufen",
+  "shopGoShoppingAt": "Einkaufen bei {name}",
+  "@shopGoShoppingAt": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "shopWhichStore": "Wo kaufst du ein?",
+  "shopEmptyTitle": "Alles da!",
+  "shopEmptyMessage": "Tippe oben, was fehlt — oder sag es einfach: „Milch, Eier und Spülmittel bei Rewe“.",
+  "shopVoiceButton": "Sprechen",
+  "shopVoiceTitle": "Was fehlt?",
+  "shopVoiceHint": "Zum Beispiel: „Zwei Liter Milch, Eier und Spülmittel bei Rewe“",
+  "shopOtherHint": "Tippe auf ⋯ und wähle eine Abteilung — die App merkt es sich.",
+  "shopDoneSection": "Erledigt ({count})",
+  "@shopDoneSection": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "shopRestock": "Bald wieder nötig:",
+  "shopNotFoundAt": "Gab’s nicht bei {name}",
+  "@shopNotFoundAt": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "shopLastStore": "letztem Laden",
+  "storeModeTitle": "Bei {name}",
+  "@storeModeTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "storeModeDone": "Fertig",
+  "storeModeAllDone": "Alles im Wagen!",
+  "storeModeNotFound": "Gab’s nicht",
+  "storeModeCart": "Im Wagen ({count})",
+  "@storeModeCart": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "storeModeLeft": "{count, plural, =1{1 Artikel ist noch offen.} other{{count} Artikel sind noch offen.}}",
+  "@storeModeLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "storeModeMoveTo": "Für {name} vormerken",
+  "@storeModeMoveTo": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "storeModeKeep": "Auf der Liste lassen",
+  "storesAdd": "Laden hinzufügen",
+  "storesAddHint": "z. B. Lidl, Edeka, dm, Wochenmarkt",
+  "storesIntro": "Halte gedrückt und ziehe, um die Reihenfolge zu ändern. Tippe auf einen Laden für Name, Farbe und Gänge.",
+  "storesOpen": "{count} offen",
+  "@storesOpen": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "storesDeleted": "{name} gelöscht",
+  "@storesDeleted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "storesAisles": "Gang-Reihenfolge",
+  "storesAislesHint": "Lernt beim Einkaufen von selbst mit. Hier kannst du sie auch selbst ziehen.",
+  "storesAislesOf": "Gänge bei {name}",
+  "@storesAislesOf": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "storesDepartments": "Abteilungen",
+  "storesDepartmentsHint": "Reihenfolge der Ansicht „Alle“. Eigene Abteilungen mit +.",
+  "storesAddDepartment": "Abteilung hinzufügen",
+  "voiceListening": "Ich höre zu …",
+  "voiceStarting": "Einen Moment …",
+  "voiceUnavailable": "Spracherkennung ist auf diesem Gerät nicht verfügbar. Tippe es einfach:",
+  "voiceError": "Das hat nicht geklappt. Nochmal versuchen oder tippen:",
+  "voiceTypeInstead": "Milch, Eier, Brot …",
+  "voiceRetry": "Nochmal",
+  "voiceDone": "Fertig",
+  "voiceNothing": "Ich habe keinen Artikel verstanden."
+}
