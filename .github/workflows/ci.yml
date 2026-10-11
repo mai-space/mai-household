@@ -115,6 +115,14 @@ jobs:
           # Runner-RAM schonen; Daemon in CI ausschalten
           GRADLE_OPTS: "-Dorg.gradle.daemon=false"
 
+      # Uhr-App (android/wear) entsteht im selben Gradle-Lauf mit; hier
+      # zusätzlich ihre Logik-Tests.
+      - name: Wear OS unit tests
+        working-directory: android
+        run: ./gradlew :wear:testReleaseUnitTest
+        env:
+          GRADLE_OPTS: "-Dorg.gradle.daemon=false"
+
       - name: Upload APK build log (failure)
         if: failure()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
@@ -127,13 +135,18 @@ jobs:
       # Einheitlicher Dateiname für alle Mai-Apps: <repo>.apk
       - name: Rename APK
         if: success()
-        run: cp build/app/outputs/flutter-apk/app-release.apk build/app/outputs/flutter-apk/mai-household.apk
+        run: |
+          cp build/app/outputs/flutter-apk/app-release.apk build/app/outputs/flutter-apk/mai-household.apk
+          # Uhr-APK: gleiche Signatur wie das Telefon-APK (gleicher Runner).
+          cp build/wear/outputs/apk/release/wear-release.apk build/app/outputs/flutter-apk/mai-household-wear.apk
 
       - name: Upload APK artifact
         if: success()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: mai-household-apk
-          path: build/app/outputs/flutter-apk/mai-household.apk
+          path: |
+            build/app/outputs/flutter-apk/mai-household.apk
+            build/app/outputs/flutter-apk/mai-household-wear.apk
           if-no-files-found: error
           retention-days: 14

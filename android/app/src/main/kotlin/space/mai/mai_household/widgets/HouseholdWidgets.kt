@@ -16,6 +16,7 @@ import android.view.View
 import android.widget.RemoteViews
 import space.mai.mai_household.MainActivity
 import space.mai.mai_household.R
+import space.mai.mai_household.wear.WearBridge
 import java.time.LocalDate
 import java.time.ZoneId
 
@@ -59,6 +60,9 @@ abstract class HouseholdWidgetProvider(private val kind: WidgetKind) : AppWidget
                     val store = if (target == WidgetKind.CHORES) WidgetStore.KIND_CHORE else WidgetStore.KIND_SHOP
                     WidgetStore.toggle(context, store, id, System.currentTimeMillis())
                     HouseholdWidgets.refresh(context, target)
+                    // Auch auf der Uhr als abgehakt zeigen.
+                    val result = goAsync()
+                    WearBridge.publish(context) { result.finish() }
                 }
             }
             HouseholdWidgets.ACTION_REFRESH -> HouseholdWidgets.refreshAll(context)

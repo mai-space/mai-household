@@ -68,6 +68,18 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/widget_meals_info" />
         </receiver>
+        <!-- Uhr (Wear OS): Abgehaktes von der Uhr-App (android/wear). -->
+        <service
+            android:name=".wear.WearListenerService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.DATA_CHANGED" />
+                <data
+                    android:host="*"
+                    android:path="/household/watch"
+                    android:scheme="wear" />
+            </intent-filter>
+        </service>
         <!-- Listen in Widgets bis Android 11. -->
         <service
             android:name=".widgets.WidgetListService"

@@ -22,6 +22,14 @@ Haushalts-App für Paare, Familien und WGs — **lokal, ohne Konto, ohne Cloud**
   abhaken; „+“ und Mikrofon öffnen die Eingabe. Abgehaktes trägt die App
   beim nächsten Öffnen ein (`lib/home_widgets/`,
   `android/…/widgets/`).
+- **Uhr (Wear OS):** dieselben drei Ansichten als Kacheln und
+  Zifferblatt-Komplikationen, dazu eine kleine Liste auf der Uhr; Aufgaben
+  und Einkäufe direkt am Handgelenk abhaken. Eigenes APK
+  (`android/wear`, CI-Artefakt `mai-household-wear.apk`) mit derselben
+  Signatur wie die Telefon-App; Daten kommen über die gekoppelte
+  Verbindung (Datenschicht der Play-Dienste, `android/…/wear/WearBridge.kt`),
+  die Uhr-App hat keine Netzberechtigung. Abgehaktes landet in derselben
+  Warteliste wie bei den Widgets.
 
 Konzept und UX-Begründung: [`docs/KONZEPT.md`](docs/KONZEPT.md)
 
