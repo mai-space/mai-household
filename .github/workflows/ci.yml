@@ -117,9 +117,10 @@ jobs:
 
       # Uhr-App (android/wear) entsteht im selben Gradle-Lauf mit; hier
       # zusätzlich ihre Logik-Tests.
-      - name: Wear OS unit tests
+      - name: Wear OS build & unit tests
         working-directory: android
-        run: ./gradlew :wear:testReleaseUnitTest
+        # assembleRelease ist meist schon aktuell (flutter build apk baut alle Module).
+        run: ./gradlew :wear:testDebugUnitTest :wear:assembleRelease
         env:
           GRADLE_OPTS: "-Dorg.gradle.daemon=false"
 
