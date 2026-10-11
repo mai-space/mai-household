@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Einkaufsliste: Standard 3×3, frei skalierbar (ab 1×1: Zähler mit
+     Schnellaktionen, ab 2×2: Liste zum Abhaken). -->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/widget_shopping_description"
+    android:initialLayout="@layout/widget_list"
+    android:minWidth="180dp"
+    android:minHeight="180dp"
+    android:minResizeWidth="40dp"
+    android:minResizeHeight="40dp"
+    android:previewLayout="@layout/widget_preview_shopping"
+    android:resizeMode="horizontal|vertical"
+    android:targetCellWidth="3"
+    android:targetCellHeight="3"
+    android:updatePeriodMillis="3600000"
+    android:widgetCategory="home_screen" />

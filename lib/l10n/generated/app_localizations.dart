@@ -1981,6 +1981,30 @@ abstract class AppLocalizations {
   /// In de, this message translates to:
   /// **'Morgen ist Abholung'**
   String get reminderWasteTitle;
+
+  /// No description provided for @widgetOverdue.
+  ///
+  /// In de, this message translates to:
+  /// **'überfällig'**
+  String get widgetOverdue;
+
+  /// No description provided for @widgetMealsTitle.
+  ///
+  /// In de, this message translates to:
+  /// **'Essensplan'**
+  String get widgetMealsTitle;
+
+  /// No description provided for @widgetMealsEmpty.
+  ///
+  /// In de, this message translates to:
+  /// **'Noch nichts geplant'**
+  String get widgetMealsEmpty;
+
+  /// No description provided for @widgetTomorrow.
+  ///
+  /// In de, this message translates to:
+  /// **'Morgen'**
+  String get widgetTomorrow;
 }
 
 class _AppLocalizationsDelegate

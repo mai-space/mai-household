@@ -34,6 +34,45 @@
                 <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
             </intent-filter>
         </receiver>
+        <!-- Homescreen-Widgets: Aufgaben heute, Einkaufsliste, Essensplan. -->
+        <receiver
+            android:name=".widgets.ChoresWidgetProvider"
+            android:exported="false"
+            android:label="@string/widget_chores_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_chores_info" />
+        </receiver>
+        <receiver
+            android:name=".widgets.ShoppingWidgetProvider"
+            android:exported="false"
+            android:label="@string/widget_shopping_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_shopping_info" />
+        </receiver>
+        <receiver
+            android:name=".widgets.MealsWidgetProvider"
+            android:exported="false"
+            android:label="@string/widget_meals_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_meals_info" />
+        </receiver>
+        <!-- Listen in Widgets bis Android 11. -->
+        <service
+            android:name=".widgets.WidgetListService"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -46,6 +85,12 @@
             <meta-data
               android:name="io.flutter.embedding.android.NormalTheme"
               android:resource="@style/NormalTheme"
+              />
+            <!-- Widget-Links (maihh-widget://…) wertet die App selbst aus
+                 (Kanal mai/widgets), nicht der Flutter-Router. -->
+            <meta-data
+              android:name="flutter_deeplinking_enabled"
+              android:value="false"
               />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Homescreen-Widgets, hell. Farben aus dem App-Grün (seed #3E7C59);
+     ab Android 12 dynamisch (values-v31). -->
+<resources>
+    <color name="widget_surface">#FFF6FBF4</color>
+    <color name="widget_on_surface">#FF171D19</color>
+    <color name="widget_on_surface_variant">#FF404943</color>
+    <color name="widget_primary">#FF2E6A4A</color>
+    <color name="widget_primary_container">#FFB1F1C9</color>
+    <color name="widget_on_primary_container">#FF002113</color>
+    <color name="widget_error">#FFBA1A1A</color>
+</resources>

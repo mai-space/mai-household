@@ -638,5 +638,9 @@
       }
     }
   },
-  "reminderWasteTitle": "Morgen ist Abholung"
+  "reminderWasteTitle": "Morgen ist Abholung",
+  "widgetOverdue": "überfällig",
+  "widgetMealsTitle": "Essensplan",
+  "widgetMealsEmpty": "Noch nichts geplant",
+  "widgetTomorrow": "Morgen"
 }

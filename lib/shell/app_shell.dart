@@ -1,10 +1,14 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 import '../app/services.dart';
 import '../features/chores/chores_page.dart';
 import '../features/kitchen/kitchen_page.dart';
+import '../features/kitchen/recipe_detail_page.dart';
 import '../features/shopping/shopping_page.dart';
 import '../features/today/today_page.dart';
+import '../home_widgets/home_widgets.dart';
 import '../l10n/l10n.dart';
 
 /// Vier Bereiche: Heute · Einkauf · Aufgaben · Küche.
@@ -19,13 +23,17 @@ class AppShell extends StatefulWidget {
 
 class _AppShellState extends State<AppShell> with WidgetsBindingObserver {
   int _index = 0;
+  StreamSubscription<WidgetLink>? _links;
 
   @override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
-    WidgetsBinding.instance.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
       final s = context.services;
+      _links = s.widgets.links.stream.listen(_openLink);
+      // Erst auf dem Homescreen Abgehaktes eintragen, dann teilen.
+      await s.widgets.start().catchError((_) {});
       s.sync.start().catchError((_) {});
       s.watchForReminders();
       s.scheduleReminders();
@@ -35,16 +43,38 @@ class _AppShellState extends State<AppShell> with WidgetsBindingObserver {
   @override
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
+    _links?.cancel();
     super.dispose();
   }
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    final sync = context.services.sync;
+    final s = context.services;
     if (state == AppLifecycleState.resumed) {
-      sync.start().catchError((_) {});
+      s.widgets
+          .sync()
+          .catchError((_) {})
+          .whenComplete(() => s.sync.start().catchError((_) {}));
     } else if (state == AppLifecycleState.paused) {
-      sync.stop().catchError((_) {});
+      s.sync.stop().catchError((_) {});
+      s.widgets.publish().catchError((_) {});
+    }
+  }
+
+  /// Tipp auf ein Homescreen-Widget: passenden Bereich öffnen. Aktionen im
+  /// Einkauf (Eingabe, Sprache) übernimmt die Einkaufsseite selbst.
+  void _openLink(WidgetLink link) {
+    if (!mounted) return;
+    Navigator.of(context).popUntil((r) => r.isFirst);
+    _open(link.tab);
+    final recipeId = link.recipeId;
+    if (recipeId != null) {
+      Navigator.of(context).push(
+        MaterialPageRoute<void>(
+          builder: (_) =>
+              RecipeDetailPage(recipeId: recipeId, servings: link.servings),
+        ),
+      );
     }
   }
 
