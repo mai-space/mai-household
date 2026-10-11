@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Texte der Uhr-App, die ohne Stand vom Telefon gebraucht werden. Alles
+     andere (Überschriften, „überfällig“ …) kommt in der App-Sprache mit. -->
+<resources>
+    <string name="app_name" translatable="false">Haushalt</string>
+    <string name="tile_chores">Chores today</string>
+    <string name="tile_shopping">Shopping list</string>
+    <string name="tile_meals">Meal plan</string>
+    <string name="short_chores">Chores</string>
+    <string name="short_shopping">Shopping</string>
+    <string name="short_meals">Meals</string>
+    <string name="setup">Open Haushalt on your phone</string>
+    <string name="more">%d more</string>
+    <string name="done">Done</string>
+    <string name="open">Not done</string>
+</resources>

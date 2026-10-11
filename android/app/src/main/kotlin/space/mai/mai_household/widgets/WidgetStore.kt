@@ -26,6 +26,9 @@ object WidgetStore {
         prefs(context).edit().putString(KEY_SNAPSHOT, json).apply()
     }
 
+    /** Stand als Text (für die Uhr) oder `null`. */
+    fun snapshotJson(context: Context): String? = prefs(context).getString(KEY_SNAPSHOT, null)
+
     /** Letzter Stand der App oder `null` (App noch nie geöffnet/eingerichtet). */
     fun snapshot(context: Context): JSONObject? {
         val raw = prefs(context).getString(KEY_SNAPSHOT, null) ?: return null
@@ -75,6 +78,19 @@ object WidgetStore {
         if (!removed) {
             out.put(JSONObject().put("kind", kind).put("id", id).put("at", now))
         }
+        prefs(context).edit().putString(KEY_PENDING, out.toString()).apply()
+    }
+
+    /** Markierung gezielt setzen bzw. entfernen (von der Uhr). */
+    @Synchronized
+    fun set(context: Context, kind: String, id: String, checked: Boolean, at: Long) {
+        val list = pending(context)
+        val out = JSONArray()
+        for (i in 0 until list.length()) {
+            val e = list.optJSONObject(i) ?: continue
+            if (!(e.optString("kind") == kind && e.optString("id") == id)) out.put(e)
+        }
+        if (checked) out.put(JSONObject().put("kind", kind).put("id", id).put("at", at))
         prefs(context).edit().putString(KEY_PENDING, out.toString()).apply()
     }
 

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_chores">Aufgaben heute</string>
+    <string name="tile_shopping">Einkaufsliste</string>
+    <string name="tile_meals">Essensplan</string>
+    <string name="short_chores">Aufgaben</string>
+    <string name="short_shopping">Einkauf</string>
+    <string name="short_meals">Essen</string>
+    <string name="setup">Haushalt auf dem Telefon öffnen</string>
+    <string name="more">%d weitere</string>
+    <string name="done">Erledigt</string>
+    <string name="open">Offen</string>
+</resources>

@@ -6,6 +6,7 @@ import android.net.wifi.WifiManager
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.MethodChannel
+import space.mai.mai_household.wear.WearBridge
 import space.mai.mai_household.widgets.HouseholdWidgets
 import space.mai.mai_household.widgets.WidgetLinks
 import space.mai.mai_household.widgets.WidgetStore
@@ -36,6 +37,8 @@ class MainActivity : FlutterActivity() {
                         if (json != null) {
                             WidgetStore.saveSnapshot(applicationContext, json)
                             HouseholdWidgets.refreshAll(applicationContext)
+                            // Gleicher Stand für die Uhr (nur mit gekoppelter Uhr-App).
+                            WearBridge.publish(applicationContext)
                         }
                         result.success(null)
                     }
