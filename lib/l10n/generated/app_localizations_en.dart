@@ -382,7 +382,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get wasteDeleteFuture => 'Delete all future dates';
 
   @override
-  String get appTitle => 'Household';
+  String get appTitle => 'Haushalt';
 
   @override
   String get commonAdd => 'Add';
