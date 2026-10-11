@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 import '../../app/services.dart';
@@ -6,6 +8,7 @@ import '../../data/data_context.dart';
 import '../../domain/shopping/departments.dart';
 import '../../domain/shopping/store_order.dart';
 import '../../domain/shopping/voice_parser.dart';
+import '../../home_widgets/home_widgets.dart';
 import '../../l10n/l10n.dart';
 import '../../widgets/common.dart';
 import '../../widgets/labels.dart';
@@ -29,12 +32,18 @@ class _ShoppingPageState extends State<ShoppingPage> {
   String? _storeId;
   bool _showDone = false;
   List<ProductMemory> _restock = const [];
+  StreamSubscription<WidgetLink>? _links;
+  final _focusAdd = ValueNotifier<int>(0);
+
+  /// Aktion aus dem Homescreen-Widget, bis die Liste geladen ist.
+  String? _pendingAction;
 
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
     if (_data == null) {
       final services = context.services;
+      _links = services.widgets.links.stream.listen(_onWidgetLink);
       _data = ShoppingData(services.shopping)..addListener(_changed);
       services.ctx.setting(SettingKeys.shoppingStore).then((id) {
         if (mounted && id != null && id.isNotEmpty) {
@@ -46,8 +55,30 @@ class _ShoppingPageState extends State<ShoppingPage> {
 
   int _lastOpenCount = -1;
 
+  void _onWidgetLink(WidgetLink link) {
+    if (link.tab != 1 || link.action == null) return;
+    _pendingAction = link.action;
+    if (_data!.loaded) _runWidgetAction();
+  }
+
+  void _runWidgetAction() {
+    final action = _pendingAction;
+    _pendingAction = null;
+    // Nach dem Reiterwechsel, damit Fokus/Sheet auf der sichtbaren Seite
+    // landen.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      if (action == 'voice') {
+        _voice();
+      } else if (action == 'add') {
+        _focusAdd.value++;
+      }
+    });
+  }
+
   void _changed() {
     final data = _data!;
+    if (_pendingAction != null && data.loaded) _runWidgetAction();
     if (_storeId != null && data.loaded && data.store(_storeId) == null) {
       _storeId = null;
     }
@@ -65,6 +96,8 @@ class _ShoppingPageState extends State<ShoppingPage> {
 
   @override
   void dispose() {
+    _links?.cancel();
+    _focusAdd.dispose();
     _data?.dispose();
     super.dispose();
   }
@@ -217,6 +250,7 @@ class _ShoppingPageState extends State<ShoppingPage> {
                     data: data,
                     storeId: _storeId,
                     onVoice: _voice,
+                    focusRequest: _focusAdd,
                   ),
                 ),
                 if (_restock.isNotEmpty)

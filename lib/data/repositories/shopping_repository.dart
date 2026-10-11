@@ -373,8 +373,10 @@ class ShoppingRepository {
     ShoppingItem item,
     ItemStatus status, {
     String? storeId,
+    // Zeitpunkt des Abhakens (z. B. früher im Homescreen-Widget).
+    DateTime? at,
   }) async {
-    final now = DateTime.now().millisecondsSinceEpoch;
+    final now = (at ?? DateTime.now()).millisecondsSinceEpoch;
     await db.transaction(() async {
       await _write(
         item.id,

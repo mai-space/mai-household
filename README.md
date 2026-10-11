@@ -17,6 +17,11 @@ Haushalts-App für Paare, Familien und WGs — **lokal, ohne Konto, ohne Cloud**
 - **Teilen:** QR-Code zeigen/scannen; danach gleichen sich die Geräte im
   selben WLAN direkt ab (UDP-Suche + HTTP, AES-256-GCM mit dem
   Haushaltsschlüssel aus dem QR-Code). Kein Server.
+- **Homescreen-Widgets (Android):** Aufgaben heute, Einkaufsliste und
+  Essensplan — frei skalierbar (kleine Zeile bis große Liste), direkt
+  abhaken; „+“ und Mikrofon öffnen die Eingabe. Abgehaktes trägt die App
+  beim nächsten Öffnen ein (`lib/home_widgets/`,
+  `android/…/widgets/`).
 
 Konzept und UX-Begründung: [`docs/KONZEPT.md`](docs/KONZEPT.md)
 

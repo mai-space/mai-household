@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Homescreen-Widgets, dunkel. -->
+<resources>
+    <color name="widget_surface">#FF0F1511</color>
+    <color name="widget_on_surface">#FFDFE4DD</color>
+    <color name="widget_on_surface_variant">#FFC0C9C1</color>
+    <color name="widget_primary">#FF95D5AE</color>
+    <color name="widget_primary_container">#FF13512F</color>
+    <color name="widget_on_primary_container">#FFB1F1C9</color>
+    <color name="widget_error">#FFFFB4AB</color>
+</resources>

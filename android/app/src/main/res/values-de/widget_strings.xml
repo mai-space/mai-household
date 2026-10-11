@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_chores_label">Aufgaben heute</string>
+    <string name="widget_chores_description">Was heute dran ist – direkt auf dem Homescreen abhaken.</string>
+    <string name="widget_shopping_label">Einkaufsliste</string>
+    <string name="widget_shopping_description">Die Einkaufsliste zum Abhaken, mit schneller Eingabe und Sprache.</string>
+    <string name="widget_meals_label">Essensplan</string>
+    <string name="widget_meals_description">Was heute und in den nächsten Tagen gekocht wird.</string>
+    <string name="widget_setup">App öffnen, um loszulegen</string>
+    <string name="widget_add">Hinzufügen</string>
+    <string name="widget_voice">Spracheingabe</string>
+    <string name="widget_open">App öffnen</string>
+    <string name="widget_check">Erledigt</string>
+    <string name="widget_preview_chore_1">Staubsaugen</string>
+    <string name="widget_preview_chore_2">Pflanzen gießen</string>
+    <string name="widget_preview_item_1">Milch</string>
+    <string name="widget_preview_item_2">Brot</string>
+    <string name="widget_preview_meal_1">Lasagne</string>
+    <string name="widget_preview_meal_2">Tomatensuppe</string>
+    <string name="widget_preview_today">Heute</string>
+    <string name="widget_preview_tomorrow">Morgen</string>
+</resources>

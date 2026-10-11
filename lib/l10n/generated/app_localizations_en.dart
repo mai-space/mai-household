@@ -1153,4 +1153,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get reminderWasteTitle => 'Bin collection tomorrow';
+
+  @override
+  String get widgetOverdue => 'overdue';
+
+  @override
+  String get widgetMealsTitle => 'Meal plan';
+
+  @override
+  String get widgetMealsEmpty => 'Nothing planned yet';
+
+  @override
+  String get widgetTomorrow => 'Tomorrow';
 }

@@ -313,5 +313,9 @@
   "todayShoppingOpen": "{count, plural, =1{1 item on the list} other{{count} items on the list}}",
   "reminderChannel": "Household",
   "reminderChoresTitle": "{count, plural, =1{Due today: 1 chore} other{Due today: {count} chores}}",
-  "reminderWasteTitle": "Bin collection tomorrow"
+  "reminderWasteTitle": "Bin collection tomorrow",
+  "widgetOverdue": "overdue",
+  "widgetMealsTitle": "Meal plan",
+  "widgetMealsEmpty": "Nothing planned yet",
+  "widgetTomorrow": "Tomorrow"
 }

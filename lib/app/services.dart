@@ -8,6 +8,7 @@ import '../data/repositories/chore_repository.dart';
 import '../data/repositories/household_repository.dart';
 import '../data/repositories/recipe_repository.dart';
 import '../data/repositories/shopping_repository.dart';
+import '../home_widgets/home_widgets.dart';
 import '../services/reminders.dart';
 import '../sync/sync_service.dart';
 
@@ -19,7 +20,8 @@ class AppServices {
       chores = ChoreRepository(ctx),
       recipes = RecipeRepository(ctx),
       sync = SyncService(ctx),
-      reminders = Reminders(ctx);
+      reminders = Reminders(ctx),
+      widgets = HomeWidgets(ctx);
 
   final DataContext ctx;
   final HouseholdRepository household;
@@ -28,6 +30,7 @@ class AppServices {
   final RecipeRepository recipes;
   final SyncService sync;
   final Reminders reminders;
+  final HomeWidgets widgets;
 
   AppDatabase get db => ctx.db;
 
@@ -51,6 +54,7 @@ class AppServices {
   Future<void> dispose() async {
     _rescheduleTimer?.cancel();
     await _sub?.cancel();
+    await widgets.dispose();
     await sync.dispose();
     await ctx.dispose();
     await ctx.db.close();

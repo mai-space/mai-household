@@ -21,11 +21,16 @@ class AddBar extends StatefulWidget {
     required this.data,
     required this.storeId,
     required this.onVoice,
+    this.focusRequest,
   });
 
   final ShoppingData data;
   final String? storeId;
   final VoidCallback onVoice;
+
+  /// Feuert, wenn das Eingabefeld den Fokus bekommen soll (z. B. „+“ im
+  /// Homescreen-Widget).
+  final Listenable? focusRequest;
 
   @override
   State<AddBar> createState() => _AddBarState();
@@ -40,14 +45,27 @@ class _AddBarState extends State<AddBar> {
   @override
   void initState() {
     super.initState();
+    widget.focusRequest?.addListener(_requestFocus);
     _focus.addListener(() {
       if (_focus.hasFocus) _load();
       if (!_focus.hasFocus) setState(() => _suggestions = const []);
     });
   }
 
+  void _requestFocus() => _focus.requestFocus();
+
+  @override
+  void didUpdateWidget(AddBar oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.focusRequest != widget.focusRequest) {
+      oldWidget.focusRequest?.removeListener(_requestFocus);
+      widget.focusRequest?.addListener(_requestFocus);
+    }
+  }
+
   @override
   void dispose() {
+    widget.focusRequest?.removeListener(_requestFocus);
     _debounce?.cancel();
     _controller.dispose();
     _focus.dispose();
