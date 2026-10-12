@@ -11,5 +11,11 @@
   "tabToday": "Heute",
   "tabShopping": "Einkauf",
   "tabChores": "Aufgaben",
-  "tabKitchen": "Küche"
+  "tabKitchen": "Küche",
+  "commonRetry": "Erneut versuchen",
+  "commonUnderstood": "Verstanden",
+  "keyUnavailableTitle": "Daten gerade nicht lesbar",
+  "keyUnavailableText": "Der Schlüssel deiner verschlüsselten Daten ist gerade nicht erreichbar. Deine Daten sind sicher — versuch es gleich noch einmal oder starte das Gerät neu.",
+  "unreadableTitle": "Alte Daten nicht lesbar",
+  "unreadableText": "Deine bisherigen Daten ließen sich auf diesem Gerät nicht mehr entschlüsseln und wurden beiseitegelegt. Teilst du den Haushalt mit anderen Geräten, kommen die gemeinsamen Listen beim nächsten Abgleich zurück."
 }

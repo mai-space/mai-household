@@ -1,5 +1,6 @@
 import 'package:drift/drift.dart';
-import 'package:drift_flutter/drift_flutter.dart';
+
+import 'connection/connection.dart';
 
 part 'app_database.g.dart';
 
@@ -244,7 +245,7 @@ class Peers extends Table {
 )
 class AppDatabase extends _$AppDatabase {
   AppDatabase([QueryExecutor? executor])
-    : super(executor ?? driftDatabase(name: 'mai_household'));
+    : super(executor ?? openAppDatabase());
 
   @override
   int get schemaVersion => 1;

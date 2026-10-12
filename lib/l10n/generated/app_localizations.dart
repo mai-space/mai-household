@@ -830,6 +830,42 @@ abstract class AppLocalizations {
   /// **'Küche'**
   String get tabKitchen;
 
+  /// No description provided for @commonRetry.
+  ///
+  /// In de, this message translates to:
+  /// **'Erneut versuchen'**
+  String get commonRetry;
+
+  /// No description provided for @commonUnderstood.
+  ///
+  /// In de, this message translates to:
+  /// **'Verstanden'**
+  String get commonUnderstood;
+
+  /// No description provided for @keyUnavailableTitle.
+  ///
+  /// In de, this message translates to:
+  /// **'Daten gerade nicht lesbar'**
+  String get keyUnavailableTitle;
+
+  /// No description provided for @keyUnavailableText.
+  ///
+  /// In de, this message translates to:
+  /// **'Der Schlüssel deiner verschlüsselten Daten ist gerade nicht erreichbar. Deine Daten sind sicher — versuch es gleich noch einmal oder starte das Gerät neu.'**
+  String get keyUnavailableText;
+
+  /// No description provided for @unreadableTitle.
+  ///
+  /// In de, this message translates to:
+  /// **'Alte Daten nicht lesbar'**
+  String get unreadableTitle;
+
+  /// No description provided for @unreadableText.
+  ///
+  /// In de, this message translates to:
+  /// **'Deine bisherigen Daten ließen sich auf diesem Gerät nicht mehr entschlüsseln und wurden beiseitegelegt. Teilst du den Haushalt mit anderen Geräten, kommen die gemeinsamen Listen beim nächsten Abgleich zurück.'**
+  String get unreadableText;
+
   /// No description provided for @householdTitle.
   ///
   /// In de, this message translates to:

@@ -19,6 +19,9 @@ class MainActivity : FlutterActivity() {
 
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
+        // Schlüssel der verschlüsselten Datenbank (Android Keystore).
+        MethodChannel(flutterEngine.dartExecutor.binaryMessenger, DatabaseKeyChannel.NAME)
+            .setMethodCallHandler(DatabaseKeyChannel(applicationContext))
         // IANA-Zeitzone des Geräts (z. B. „Europe/Berlin“) für Erinnerungen.
         MethodChannel(flutterEngine.dartExecutor.binaryMessenger, "mai/device")
             .setMethodCallHandler { call, result ->
