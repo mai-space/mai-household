@@ -421,6 +421,26 @@ class AppLocalizationsDe extends AppLocalizations {
   String get tabKitchen => 'Küche';
 
   @override
+  String get commonRetry => 'Erneut versuchen';
+
+  @override
+  String get commonUnderstood => 'Verstanden';
+
+  @override
+  String get keyUnavailableTitle => 'Daten gerade nicht lesbar';
+
+  @override
+  String get keyUnavailableText =>
+      'Der Schlüssel deiner verschlüsselten Daten ist gerade nicht erreichbar. Deine Daten sind sicher — versuch es gleich noch einmal oder starte das Gerät neu.';
+
+  @override
+  String get unreadableTitle => 'Alte Daten nicht lesbar';
+
+  @override
+  String get unreadableText =>
+      'Deine bisherigen Daten ließen sich auf diesem Gerät nicht mehr entschlüsseln und wurden beiseitegelegt. Teilst du den Haushalt mit anderen Geräten, kommen die gemeinsamen Listen beim nächsten Abgleich zurück.';
+
+  @override
   String get householdTitle => 'Haushalt';
 
   @override

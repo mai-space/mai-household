@@ -421,6 +421,26 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tabKitchen => 'Kitchen';
 
   @override
+  String get commonRetry => 'Try again';
+
+  @override
+  String get commonUnderstood => 'Got it';
+
+  @override
+  String get keyUnavailableTitle => 'Data not readable right now';
+
+  @override
+  String get keyUnavailableText =>
+      'The key for your encrypted data is not available right now. Your data is safe — try again in a moment or restart your device.';
+
+  @override
+  String get unreadableTitle => 'Old data could not be read';
+
+  @override
+  String get unreadableText =>
+      'Your previous data could no longer be decrypted on this device and was set aside. If you share your household with other devices, the shared lists come back with the next sync.';
+
+  @override
   String get householdTitle => 'Household';
 
   @override

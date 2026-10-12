@@ -24,6 +24,12 @@ sich weiter abgleichen können**.
   - Eingebaute Einträge haben feste IDs (`dep-…`, `store-…`, `area-…`) und
     `updatedAt = 1` — nie ändern, sonst entstehen Doppelte beim Teilen.
   - Danach: `dart run build_runner build --delete-conflicting-outputs`.
+- **Verschlüsselte Datenbank (`lib/data/connection/`, SQLite3 Multiple
+  Ciphers, wie Doctor Hub/Fitness)** — Dateiname `mai_household.sqlite`,
+  Keystore-Alias `mai_household_db_wrap` und `db.key` in `noBackupFilesDir`
+  nie ändern, sonst ist die Datenbank nicht mehr lesbar. Die einmalige
+  Umstellung alter, unverschlüsselter Installationen (Sicherungskopie →
+  verschlüsseln → prüfen → sonst zurückspielen) muss erhalten bleiben.
 - **Sync (`lib/sync/`)** — Nachrichtenformat nur erweitern; unbekannte
   Spalten/Felder werden ignoriert. `SyncEngine` vergleicht pro Zeile
   `updatedAt` (hybride Uhr). Jede lokale Änderung an geteilten Tabellen

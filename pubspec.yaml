@@ -37,6 +37,7 @@ dependencies:
   drift: ^2.35.2
   drift_flutter: ^0.3.1
   sqlite3_flutter_libs: ^0.6.0+eol
+  sqlite3: ^3.7.0
   path_provider: ^2.1.6
   path: ^1.9.1
   uuid: ^4.6.0
@@ -111,3 +112,10 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+
+# Datenbank verschlüsselt (SQLite3 Multiple Ciphers), wie Mai Doctor Hub und
+# Fitness.
+hooks:
+  user_defines:
+    sqlite3:
+      source: sqlite3mc
