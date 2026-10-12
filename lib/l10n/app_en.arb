@@ -338,6 +338,7 @@
   "voiceRetry": "Try again",
   "voiceDone": "Done",
   "voiceNothing": "I didn’t catch any items.",
+  "voiceNothingHeard": "Didn’t hear anything. Tap the microphone and speak.",
   "todayMorning": "Good morning, {name}",
   "todayDay": "Hi, {name}",
   "todayEvening": "Good evening, {name}",

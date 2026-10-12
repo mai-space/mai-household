@@ -1192,6 +1192,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get voiceNothing => 'I didn’t catch any items.';
 
   @override
+  String get voiceNothingHeard =>
+      'Didn’t hear anything. Tap the microphone and speak.';
+
+  @override
   String todayMorning(String name) {
     return 'Good morning, $name';
   }

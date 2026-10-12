@@ -59,5 +59,6 @@
   "voiceTypeInstead": "Milk, eggs, bread …",
   "voiceRetry": "Try again",
   "voiceDone": "Done",
-  "voiceNothing": "I didn’t catch any items."
+  "voiceNothing": "I didn’t catch any items.",
+  "voiceNothingHeard": "Didn’t hear anything. Tap the microphone and speak."
 }

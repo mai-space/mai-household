@@ -8,8 +8,21 @@ import 'package:speech_to_text/speech_to_text.dart';
 import '../../l10n/l10n.dart';
 
 /// Ein Speech-to-Text-Objekt für die ganze App (Initialisierung ist teuer).
-final _speech = SpeechToText();
+SpeechToText _speech = SpeechToText();
 bool _speechReady = false;
+
+/// Für Tests: frisches Speech-to-Text-Objekt (`SpeechToText()` liefert
+/// immer dasselbe, Tests nehmen `SpeechToText.withMethodChannel()`).
+@visibleForTesting
+void resetSpeechForTest(SpeechToText speech) {
+  _speech = speech;
+  _speechReady = false;
+}
+
+/// Erlaubte Pause, bevor überhaupt etwas gesagt wurde (Luft holen,
+/// überlegen). Danach reicht [_pauseAfterSpeech].
+const _pauseBeforeSpeech = Duration(seconds: 8);
+const _pauseAfterSpeech = Duration(seconds: 3);
 
 /// Hört zu und liefert den erkannten Satz (oder `null`).
 ///
@@ -43,7 +56,15 @@ class _VoiceSheet extends StatefulWidget {
   State<_VoiceSheet> createState() => _VoiceSheetState();
 }
 
-enum _State { starting, listening, unavailable, error }
+enum _State {
+  starting,
+  listening,
+
+  /// Aufnahme beendet, ohne dass etwas erkannt wurde (Tippen startet neu).
+  idle,
+  unavailable,
+  error,
+}
 
 class _VoiceSheetState extends State<_VoiceSheet> {
   _State _state = _State.starting;
@@ -51,6 +72,7 @@ class _VoiceSheetState extends State<_VoiceSheet> {
   double _level = 0;
   bool _triedOnline = false;
   bool _closing = false;
+  bool _heardSomething = false;
   final _typed = TextEditingController();
 
   @override
@@ -61,6 +83,9 @@ class _VoiceSheetState extends State<_VoiceSheet> {
 
   @override
   void dispose() {
+    // Rückmeldungen des Abbruchs dürfen dieses Blatt nicht mehr erreichen.
+    _speech.statusListener = null;
+    _speech.errorListener = null;
     if (_speech.isListening) _speech.cancel();
     _typed.dispose();
     super.dispose();
@@ -86,6 +111,7 @@ class _VoiceSheetState extends State<_VoiceSheet> {
     _speech.statusListener = _onStatus;
     final locale = AppLocale.current.languageCode == 'de' ? 'de_DE' : 'en_US';
     setState(() => _state = _State.listening);
+    _heardSomething = false;
     await _speech.listen(
       onResult: _onResult,
       onSoundLevelChange: (l) {
@@ -97,25 +123,43 @@ class _VoiceSheetState extends State<_VoiceSheet> {
         onDevice: onDevice,
         localeId: locale,
         listenFor: const Duration(seconds: 45),
-        pauseFor: const Duration(seconds: 3),
+        pauseFor: _pauseBeforeSpeech,
         contextualPhrases: widget.phrases,
-        cancelOnError: true,
+        // Fehler behandeln wir selbst: mit `cancelOnError` bricht das Plugin
+        // nach dem Fehler-Callback ab — und träfe damit genau den neuen
+        // Versuch mit der Standard-Erkennung, den `_onError` gerade gestartet
+        // hat (Ton, „Ich höre zu …“, sofort wieder aus).
+        cancelOnError: false,
       ),
     );
   }
 
+  /// Neuer Versuch auf Wunsch: hat die Erkennung auf dem Gerät schon nicht
+  /// geklappt, gleich die Standard-Erkennung nehmen.
+  void _restart() => _start(onDevice: !_triedOnline);
+
   void _onResult(SpeechRecognitionResult r) {
     if (!mounted) return;
     setState(() => _words = r.recognizedWords);
+    if (!_heardSomething && r.recognizedWords.isNotEmpty) {
+      _heardSomething = true;
+      // Sobald gesprochen wird, beendet eine kurze Pause die Eingabe.
+      if (_speech.isListening) _speech.changePauseFor(_pauseAfterSpeech);
+    }
     if (r.finalResult) _finish();
   }
 
   void _onStatus(String status) {
     if (!mounted) return;
     if ((status == 'done' || status == 'notListening') &&
-        _state == _State.listening &&
-        _words.isNotEmpty) {
-      _finish();
+        _state == _State.listening) {
+      if (_words.isNotEmpty) {
+        _finish();
+      } else {
+        // Nichts gehört: nicht weiter „Ich höre zu …“ anzeigen. Ein danach
+        // eintreffender Fehler kann den Zustand noch überschreiben.
+        setState(() => _state = _State.idle);
+      }
     }
   }
 
@@ -135,6 +179,8 @@ class _VoiceSheetState extends State<_VoiceSheet> {
       _finish();
       return;
     }
+    // Ohne `cancelOnError` laufen die Zeitgeber des Plugins sonst weiter.
+    _speech.cancel();
     setState(() => _state = _State.error);
   }
 
@@ -175,7 +221,7 @@ class _VoiceSheetState extends State<_VoiceSheet> {
           if (!failed)
             Center(
               child: GestureDetector(
-                onTap: listening ? _finish : () => _start(onDevice: true),
+                onTap: listening ? _finish : _restart,
                 child: AnimatedContainer(
                   duration: const Duration(milliseconds: 120),
                   width: 96 + (_level.clamp(0, 10) * 4),
@@ -205,7 +251,11 @@ class _VoiceSheetState extends State<_VoiceSheet> {
             )
           else if (!failed)
             Text(
-              listening ? l10n.voiceListening : l10n.voiceStarting,
+              listening
+                  ? l10n.voiceListening
+                  : _state == _State.idle
+                  ? l10n.voiceNothingHeard
+                  : l10n.voiceStarting,
               textAlign: TextAlign.center,
               style: theme.textTheme.bodyLarge,
             ),
@@ -233,7 +283,7 @@ class _VoiceSheetState extends State<_VoiceSheet> {
                   TextButton(
                     onPressed: () {
                       setState(() => _state = _State.starting);
-                      _start(onDevice: true);
+                      _restart();
                     },
                     child: Text(l10n.voiceRetry),
                   ),
