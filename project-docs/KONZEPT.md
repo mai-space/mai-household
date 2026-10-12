@@ -330,7 +330,7 @@ hier Kernnutzen):
 - **Haushalt beitreten** per QR-Code/Einladungslink auf dem Gerät eines
   Mitglieds (enthält Haushaltsschlüssel) — kein Account, keine E-Mail.
 - Ohne Server: App funktioniert vollständig für ein Gerät; Sicherung/Umzug
-  per `.maibackup` (`packages/mai_backup_format`).
+  per verschlüsselter `.maihh`-Sicherung (`packages/mai_backup_format`).
 
 ### Datenmodell (Skizze)
 

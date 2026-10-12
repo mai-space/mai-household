@@ -8,6 +8,7 @@ import '../../services/reminders.dart';
 import '../../widgets/common.dart';
 import '../shopping/shopping_data.dart';
 import '../shopping/stores_page.dart';
+import 'backup_section.dart';
 import 'share_pages.dart';
 
 /// Haushalt & Einstellungen: Personen, Geräte teilen, Erinnerungen.
@@ -308,6 +309,8 @@ class _HouseholdPageState extends State<HouseholdPage> {
               data.dispose();
             },
           ),
+          SectionHeader(l10n.backupTitle, icon: Icons.backup_outlined),
+          BackupSection(onRestored: _load),
           SectionHeader(l10n.householdAbout, icon: Icons.info_outline),
           Padding(
             padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),

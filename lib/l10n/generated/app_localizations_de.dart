@@ -10,6 +10,81 @@ class AppLocalizationsDe extends AppLocalizations {
   AppLocalizationsDe([String locale = 'de']) : super(locale);
 
   @override
+  String get backupTitle => 'Sicherung';
+
+  @override
+  String get backupIntro =>
+      'Alle Listen, Aufgaben, Rezepte und Einstellungen verschlüsselt in einer Datei — für ein neues Handy oder zur Vorsorge. Ohne Passwort ist sie nicht lesbar.';
+
+  @override
+  String get backupCreate => 'Sichern';
+
+  @override
+  String get backupRestore => 'Wiederherstellen';
+
+  @override
+  String get backupCreated => 'Sicherung erstellt';
+
+  @override
+  String get backupFailed => 'Das hat leider nicht geklappt.';
+
+  @override
+  String get backupPassphrase => 'Passwort';
+
+  @override
+  String get backupPassphraseCreateHint =>
+      'Wähle ein Passwort für die Sicherung. Ohne dieses Passwort lässt sie sich nicht wiederherstellen — gut merken!';
+
+  @override
+  String get backupPassphraseRestoreHint => 'Passwort der Sicherung';
+
+  @override
+  String get backupPassphraseRepeat => 'Passwort wiederholen';
+
+  @override
+  String get backupPassphraseMismatch => 'Die Passwörter stimmen nicht überein';
+
+  @override
+  String get backupPassphraseTooShort => 'Mindestens 8 Zeichen';
+
+  @override
+  String get backupPick => 'Sicherung auswählen';
+
+  @override
+  String get backupReplace => 'Ersetzen';
+
+  @override
+  String get backupRestoreConfirmTitle => 'Alle Daten ersetzen?';
+
+  @override
+  String get backupRestoreConfirmText =>
+      'Einkaufsliste, Aufgaben, Rezepte und Einstellungen auf diesem Gerät werden durch die Sicherung ersetzt. Teilt ihr den Haushalt, gleichen sich die Geräte danach wieder ab — neuere Änderungen der anderen bleiben erhalten.';
+
+  @override
+  String backupRestored(String date) {
+    return 'Sicherung vom $date wiederhergestellt';
+  }
+
+  @override
+  String get backupShareSubject => 'Haushalt-Sicherung';
+
+  @override
+  String get backupTooNew =>
+      'Diese Sicherung stammt aus einer neueren App-Version. Bitte aktualisiere die App.';
+
+  @override
+  String get backupUnsupported => 'Sicherungen sind hier nicht verfügbar.';
+
+  @override
+  String get backupWrongApp => 'Das ist keine Sicherung der Haushalt-App.';
+
+  @override
+  String get backupContinue => 'Weiter';
+
+  @override
+  String get onboardingRestore => 'Ich habe eine Sicherung';
+
+  @override
   String get depProduce => 'Obst & Gemüse';
 
   @override

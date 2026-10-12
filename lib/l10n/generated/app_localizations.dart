@@ -98,6 +98,144 @@ abstract class AppLocalizations {
     Locale('en'),
   ];
 
+  /// No description provided for @backupTitle.
+  ///
+  /// In de, this message translates to:
+  /// **'Sicherung'**
+  String get backupTitle;
+
+  /// No description provided for @backupIntro.
+  ///
+  /// In de, this message translates to:
+  /// **'Alle Listen, Aufgaben, Rezepte und Einstellungen verschlüsselt in einer Datei — für ein neues Handy oder zur Vorsorge. Ohne Passwort ist sie nicht lesbar.'**
+  String get backupIntro;
+
+  /// No description provided for @backupCreate.
+  ///
+  /// In de, this message translates to:
+  /// **'Sichern'**
+  String get backupCreate;
+
+  /// No description provided for @backupRestore.
+  ///
+  /// In de, this message translates to:
+  /// **'Wiederherstellen'**
+  String get backupRestore;
+
+  /// No description provided for @backupCreated.
+  ///
+  /// In de, this message translates to:
+  /// **'Sicherung erstellt'**
+  String get backupCreated;
+
+  /// No description provided for @backupFailed.
+  ///
+  /// In de, this message translates to:
+  /// **'Das hat leider nicht geklappt.'**
+  String get backupFailed;
+
+  /// No description provided for @backupPassphrase.
+  ///
+  /// In de, this message translates to:
+  /// **'Passwort'**
+  String get backupPassphrase;
+
+  /// No description provided for @backupPassphraseCreateHint.
+  ///
+  /// In de, this message translates to:
+  /// **'Wähle ein Passwort für die Sicherung. Ohne dieses Passwort lässt sie sich nicht wiederherstellen — gut merken!'**
+  String get backupPassphraseCreateHint;
+
+  /// No description provided for @backupPassphraseRestoreHint.
+  ///
+  /// In de, this message translates to:
+  /// **'Passwort der Sicherung'**
+  String get backupPassphraseRestoreHint;
+
+  /// No description provided for @backupPassphraseRepeat.
+  ///
+  /// In de, this message translates to:
+  /// **'Passwort wiederholen'**
+  String get backupPassphraseRepeat;
+
+  /// No description provided for @backupPassphraseMismatch.
+  ///
+  /// In de, this message translates to:
+  /// **'Die Passwörter stimmen nicht überein'**
+  String get backupPassphraseMismatch;
+
+  /// No description provided for @backupPassphraseTooShort.
+  ///
+  /// In de, this message translates to:
+  /// **'Mindestens 8 Zeichen'**
+  String get backupPassphraseTooShort;
+
+  /// No description provided for @backupPick.
+  ///
+  /// In de, this message translates to:
+  /// **'Sicherung auswählen'**
+  String get backupPick;
+
+  /// No description provided for @backupReplace.
+  ///
+  /// In de, this message translates to:
+  /// **'Ersetzen'**
+  String get backupReplace;
+
+  /// No description provided for @backupRestoreConfirmTitle.
+  ///
+  /// In de, this message translates to:
+  /// **'Alle Daten ersetzen?'**
+  String get backupRestoreConfirmTitle;
+
+  /// No description provided for @backupRestoreConfirmText.
+  ///
+  /// In de, this message translates to:
+  /// **'Einkaufsliste, Aufgaben, Rezepte und Einstellungen auf diesem Gerät werden durch die Sicherung ersetzt. Teilt ihr den Haushalt, gleichen sich die Geräte danach wieder ab — neuere Änderungen der anderen bleiben erhalten.'**
+  String get backupRestoreConfirmText;
+
+  /// No description provided for @backupRestored.
+  ///
+  /// In de, this message translates to:
+  /// **'Sicherung vom {date} wiederhergestellt'**
+  String backupRestored(String date);
+
+  /// No description provided for @backupShareSubject.
+  ///
+  /// In de, this message translates to:
+  /// **'Haushalt-Sicherung'**
+  String get backupShareSubject;
+
+  /// No description provided for @backupTooNew.
+  ///
+  /// In de, this message translates to:
+  /// **'Diese Sicherung stammt aus einer neueren App-Version. Bitte aktualisiere die App.'**
+  String get backupTooNew;
+
+  /// No description provided for @backupUnsupported.
+  ///
+  /// In de, this message translates to:
+  /// **'Sicherungen sind hier nicht verfügbar.'**
+  String get backupUnsupported;
+
+  /// No description provided for @backupWrongApp.
+  ///
+  /// In de, this message translates to:
+  /// **'Das ist keine Sicherung der Haushalt-App.'**
+  String get backupWrongApp;
+
+  /// No description provided for @backupContinue.
+  ///
+  /// In de, this message translates to:
+  /// **'Weiter'**
+  String get backupContinue;
+
+  /// No description provided for @onboardingRestore.
+  ///
+  /// In de, this message translates to:
+  /// **'Ich habe eine Sicherung'**
+  String get onboardingRestore;
+
   /// No description provided for @depProduce.
   ///
   /// In de, this message translates to:

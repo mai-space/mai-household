@@ -36,11 +36,19 @@ sich weiter abgleichen können**.
   muss `ctx.stamp()` setzen (`updatedAt` + `seq`) und `ctx.notifyChanged()`
   aufrufen; Löschen nur als Grabstein (`deleted = true`).
 - **Einladungs-QR (`maihh:1?…`)** — Version im Schema; neue Felder optional.
+- **Sicherungen (`packages/mai_backup_format`, `backup_service_io.dart`,
+  `.maihh`)** — ältere Sicherungen müssen wiederherstellbar bleiben (Restore
+  migriert). Manifest nur erweitern; `app` bleibt `mai_household`. Beim
+  Restore bleibt die Geräte-ID erhalten, geteilte Zeilen bekommen neue `seq`
+  über dem bisherigen Zähler und `peers` wird geleert — sonst übersehen
+  Partnergeräte Änderungen.
 
 ## Arbeitsweise
 
 - Strings: `lib/l10n/parts/<bereich>.<de|en>.json` (neue Schlüssel anhängen),
   dann `python3 tool/merge_arb.py && flutter gen-l10n`.
-- Prüfen vor jedem Commit: `flutter analyze` (sauber) und `flutter test`.
+- Prüfen vor jedem Commit: `flutter analyze` (sauber) und `flutter test`;
+  bei Änderungen an `packages/mai_backup_format` dort
+  `dart analyze --fatal-infos && dart test`.
 - Kein `dart format` auf ganze bestehende Dateien (erzeugt fremde Diffs).
 - Kommentare im Code auf Deutsch.

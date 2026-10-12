@@ -47,7 +47,9 @@ class DataContext {
   static const _uuid = Uuid();
   static String newId() => _uuid.v4();
 
-  /// Liest den höchsten Stand aus der Datenbank (beim Start).
+  /// Liest den höchsten Stand aus der Datenbank (beim Start und nach dem
+  /// Wiederherstellen einer Sicherung). Der Änderungszähler geht dabei nie
+  /// zurück, damit Partnergeräte keine neuen Änderungen übersehen.
   Future<void> load() async {
     var maxSeq = 0;
     var maxTime = 0;
@@ -61,7 +63,7 @@ class DataContext {
       maxSeq = math.max(maxSeq, row.read<int>('s'));
       maxTime = math.max(maxTime, row.read<int>('t'));
     }
-    _seq = maxSeq;
+    _seq = math.max(_seq, maxSeq);
     clock.observe(maxTime);
     deviceId = await setting(SettingKeys.deviceId) ?? await _init();
     memberId = (await setting(SettingKeys.memberId))!;
