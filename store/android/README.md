@@ -22,7 +22,7 @@ Weitere Angaben:
 - **Kategorie:** Haus & Wohnen (House & Home)
 - **Kontakt-E-Mail:** joel@maispace.de
 - **Entwickler:** maispace (Joël Maximilian Mai)
-- **Datenschutzerklärung:** liegt separat (nicht in diesem Ordner).
+- **Datenschutzerklärung:** `docs/datenschutz/` bzw. `docs/privacy/` (GitHub Pages) — deren URL gehört ins Feld „Datenschutzerklärung“.
 
 ## Wie die Bilder entstanden sind
 

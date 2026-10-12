@@ -53,5 +53,5 @@ Auf dem Standard-Branch baut die CI zusätzlich signierte App-Bundles
 (Artefakt `mai-household-release-aab`), sobald diese Repository-Secrets
 angelegt sind: `ANDROID_KEYSTORE_BASE64`, `ANDROID_KEYSTORE_PASSWORD`,
 `ANDROID_KEY_ALIAS`, `ANDROID_KEY_PASSWORD`. Upload-Schlüssel erzeugen,
-Secrets anlegen, lokal signiert bauen: [`docs/RELEASE.md`](docs/RELEASE.md).
+Secrets anlegen, lokal signiert bauen: [`project-docs/RELEASE.md`](project-docs/RELEASE.md).
 Store-Texte, Icon und Screenshots: [`store/android/`](store/android/README.md).

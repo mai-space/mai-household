@@ -80,7 +80,7 @@ jobs:
     timeout-minutes: 30
     env:
       # Signiertes App-Bundle nur auf dem Standard-Branch und nur, wenn die
-      # Signatur-Secrets angelegt sind (Anleitung: docs/RELEASE.md).
+      # Signatur-Secrets angelegt sind (Anleitung: project-docs/RELEASE.md).
       # Sonst wie bisher: APK mit Debug-Schlüssel.
       SIGN_RELEASE: ${{ secrets.ANDROID_KEYSTORE_BASE64 != '' && github.event_name == 'push' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch) }}
     steps:
@@ -126,7 +126,7 @@ jobs:
           [ -n "$KEY_ALIAS" ] || missing="$missing ANDROID_KEY_ALIAS"
           [ -n "$KEY_PASSWORD" ] || missing="$missing ANDROID_KEY_PASSWORD"
           if [ -n "$missing" ]; then
-            echo "::error::Missing secrets:$missing — see docs/RELEASE.md"
+            echo "::error::Missing secrets:$missing — see project-docs/RELEASE.md"
             exit 1
           fi
           umask 077

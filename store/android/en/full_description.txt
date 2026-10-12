@@ -30,8 +30,12 @@ WIDGETS & WATCH
 SHARED – WITHOUT A CLOUD
 Sharing works with a QR code: scan once, then devices on the same Wi-Fi sync directly and encrypted (AES-256-GCM) while the app is open. There is no server and no account – your lists stay with you. People without their own phone, such as children, can be added to the household too.
 
+BACKUP
+Create a password-encrypted backup file and restore it on a new phone – the household reconnects without a new QR code.
+
 PRIVACY
 • All data stays on your device and the devices you share with
+• The database on your device is encrypted
 • No sign-up, no ads, no analytics
 • Microphone only when you tap for voice input, camera only for scanning the QR code
 • Reminders are sparing: one daily summary and the bins the evening before – nothing else
