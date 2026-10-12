@@ -31,7 +31,7 @@ Haushalts-App für Paare, Familien und WGs — **lokal, ohne Konto, ohne Cloud**
   die Uhr-App hat keine Netzberechtigung. Abgehaktes landet in derselben
   Warteliste wie bei den Widgets.
 
-Konzept und UX-Begründung: [`docs/KONZEPT.md`](docs/KONZEPT.md)
+Konzept und UX-Begründung: [`project-docs/KONZEPT.md`](project-docs/KONZEPT.md)
 
 ## Entwicklung
 
