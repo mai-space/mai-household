@@ -628,6 +628,7 @@
   "voiceRetry": "Nochmal",
   "voiceDone": "Fertig",
   "voiceNothing": "Ich habe keinen Artikel verstanden.",
+  "voiceNothingHeard": "Nichts gehört. Tippe aufs Mikrofon und sprich.",
   "todayMorning": "Guten Morgen, {name}",
   "@todayMorning": {
     "placeholders": {

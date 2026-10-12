@@ -171,5 +171,6 @@
   "voiceTypeInstead": "Milch, Eier, Brot …",
   "voiceRetry": "Nochmal",
   "voiceDone": "Fertig",
-  "voiceNothing": "Ich habe keinen Artikel verstanden."
+  "voiceNothing": "Ich habe keinen Artikel verstanden.",
+  "voiceNothingHeard": "Nichts gehört. Tippe aufs Mikrofon und sprich."
 }

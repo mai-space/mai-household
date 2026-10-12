@@ -2084,6 +2084,12 @@ abstract class AppLocalizations {
   /// **'Ich habe keinen Artikel verstanden.'**
   String get voiceNothing;
 
+  /// No description provided for @voiceNothingHeard.
+  ///
+  /// In de, this message translates to:
+  /// **'Nichts gehört. Tippe aufs Mikrofon und sprich.'**
+  String get voiceNothingHeard;
+
   /// No description provided for @todayMorning.
   ///
   /// In de, this message translates to:
