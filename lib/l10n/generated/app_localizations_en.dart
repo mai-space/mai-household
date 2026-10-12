@@ -10,6 +10,81 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
+  String get backupTitle => 'Backup';
+
+  @override
+  String get backupIntro =>
+      'All lists, chores, recipes and settings, encrypted in one file — for a new phone or just in case. It cannot be read without the password.';
+
+  @override
+  String get backupCreate => 'Back up';
+
+  @override
+  String get backupRestore => 'Restore';
+
+  @override
+  String get backupCreated => 'Backup created';
+
+  @override
+  String get backupFailed => 'Sorry, that did not work.';
+
+  @override
+  String get backupPassphrase => 'Password';
+
+  @override
+  String get backupPassphraseCreateHint =>
+      'Choose a password for the backup. It cannot be restored without it — keep it safe!';
+
+  @override
+  String get backupPassphraseRestoreHint => 'Backup password';
+
+  @override
+  String get backupPassphraseRepeat => 'Repeat password';
+
+  @override
+  String get backupPassphraseMismatch => 'Passwords do not match';
+
+  @override
+  String get backupPassphraseTooShort => 'At least 8 characters';
+
+  @override
+  String get backupPick => 'Choose backup';
+
+  @override
+  String get backupReplace => 'Replace';
+
+  @override
+  String get backupRestoreConfirmTitle => 'Replace all data?';
+
+  @override
+  String get backupRestoreConfirmText =>
+      'Shopping list, chores, recipes and settings on this device will be replaced by the backup. If you share your household, the devices sync again afterwards — newer changes from the others are kept.';
+
+  @override
+  String backupRestored(String date) {
+    return 'Backup from $date restored';
+  }
+
+  @override
+  String get backupShareSubject => 'Household backup';
+
+  @override
+  String get backupTooNew =>
+      'This backup is from a newer app version. Please update the app.';
+
+  @override
+  String get backupUnsupported => 'Backups are not available here.';
+
+  @override
+  String get backupWrongApp => 'This is not a Household backup.';
+
+  @override
+  String get backupContinue => 'Continue';
+
+  @override
+  String get onboardingRestore => 'I have a backup';
+
+  @override
   String get depProduce => 'Fruit & vegetables';
 
   @override

@@ -1,0 +1,32 @@
+{
+  "backupTitle": "Sicherung",
+  "backupIntro": "Alle Listen, Aufgaben, Rezepte und Einstellungen verschlüsselt in einer Datei — für ein neues Handy oder zur Vorsorge. Ohne Passwort ist sie nicht lesbar.",
+  "backupCreate": "Sichern",
+  "backupRestore": "Wiederherstellen",
+  "backupCreated": "Sicherung erstellt",
+  "backupFailed": "Das hat leider nicht geklappt.",
+  "backupPassphrase": "Passwort",
+  "backupPassphraseCreateHint": "Wähle ein Passwort für die Sicherung. Ohne dieses Passwort lässt sie sich nicht wiederherstellen — gut merken!",
+  "backupPassphraseRestoreHint": "Passwort der Sicherung",
+  "backupPassphraseRepeat": "Passwort wiederholen",
+  "backupPassphraseMismatch": "Die Passwörter stimmen nicht überein",
+  "backupPassphraseTooShort": "Mindestens 8 Zeichen",
+  "backupPick": "Sicherung auswählen",
+  "backupReplace": "Ersetzen",
+  "backupRestoreConfirmTitle": "Alle Daten ersetzen?",
+  "backupRestoreConfirmText": "Einkaufsliste, Aufgaben, Rezepte und Einstellungen auf diesem Gerät werden durch die Sicherung ersetzt. Teilt ihr den Haushalt, gleichen sich die Geräte danach wieder ab — neuere Änderungen der anderen bleiben erhalten.",
+  "backupRestored": "Sicherung vom {date} wiederhergestellt",
+  "@backupRestored": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "backupShareSubject": "Haushalt-Sicherung",
+  "backupTooNew": "Diese Sicherung stammt aus einer neueren App-Version. Bitte aktualisiere die App.",
+  "backupUnsupported": "Sicherungen sind hier nicht verfügbar.",
+  "backupWrongApp": "Das ist keine Sicherung der Haushalt-App.",
+  "backupContinue": "Weiter",
+  "onboardingRestore": "Ich habe eine Sicherung"
+}

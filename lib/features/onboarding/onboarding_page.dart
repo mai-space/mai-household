@@ -7,6 +7,7 @@ import '../../domain/chores/templates.dart';
 import '../../domain/shopping/departments.dart';
 import '../../l10n/l10n.dart';
 import '../../widgets/labels.dart';
+import '../household/backup_section.dart';
 import '../household/share_pages.dart';
 
 /// Einrichten in drei kurzen Schritten — antippen statt ausfüllen.
@@ -85,6 +86,20 @@ class _OnboardingPageState extends State<OnboardingPage> {
     widget.onDone();
   }
 
+  /// Neues Handy: alles aus einer Sicherung übernehmen statt neu einrichten.
+  Future<void> _restore() async {
+    if (_busy) return;
+    setState(() => _busy = true);
+    final ctx = context.services.ctx;
+    try {
+      if (!await restoreBackup(context)) return;
+      await ctx.setSetting(SettingKeys.onboarded, '1');
+      widget.onDone();
+    } finally {
+      if (mounted) setState(() => _busy = false);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final l10n = context.l10n;
@@ -145,6 +160,12 @@ class _OnboardingPageState extends State<OnboardingPage> {
                       Text(
                         l10n.onboardingJoinHint,
                         style: theme.textTheme.bodySmall,
+                      ),
+                      const SizedBox(height: 16),
+                      TextButton.icon(
+                        onPressed: _busy ? null : _restore,
+                        icon: const Icon(Icons.restore),
+                        label: Text(l10n.onboardingRestore),
                       ),
                     ],
                   ),
