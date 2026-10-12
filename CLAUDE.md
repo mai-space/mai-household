@@ -4,7 +4,7 @@ Haushalts-App (Flutter, Android; iOS vorbereitet): Einkaufsliste mit
 Abteilungs-/Ladensortierung und Spracheingabe, Aufgaben inkl. Müllkalender,
 Rezeptbuch mit Wochenplan. Lokal, ohne Konto; Teilen nur direkt zwischen
 Geräten im selben WLAN (QR-Code). UI Deutsch/Englisch nach Systemsprache.
-Konzept: `docs/KONZEPT.md`.
+Konzept: `project-docs/KONZEPT.md`.
 
 ## Rückwärtskompatibilität (ab dem ersten verteilten Build Pflicht)
 

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutz Haushalt</title>
+<meta name="description" content="Datenschutzerklärung / Privacy Policy – Haushalt">
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1b18;--muted:#5f5a52;--line:#e4dfd6;--accent:#2f6b4f;--card:#ffffff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#151514;--fg:#ecebe7;--muted:#a8a49c;--line:#2e2d2a;--accent:#7fc4a1;--card:#1d1d1b}}
+:root[data-theme="dark"]{--bg:#151514;--fg:#ecebe7;--muted:#a8a49c;--line:#2e2d2a;--accent:#7fc4a1;--card:#1d1d1b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 16px 4rem}
+nav{display:flex;gap:.5rem;margin-bottom:1.5rem}
+nav a{padding:.35rem .8rem;border:1px solid var(--line);border-radius:999px;color:var(--fg);text-decoration:none;font-size:.9rem}
+nav a:hover{border-color:var(--accent)}
+h1{font-size:1.7rem;line-height:1.25;margin:.2rem 0 .3rem}
+h1+p{color:var(--muted);font-size:.9rem;margin-top:0}
+h2{font-size:1.15rem;margin:2rem 0 .4rem;padding-top:.8rem;border-top:1px solid var(--line)}
+a{color:var(--accent);overflow-wrap:anywhere}
+code{font-size:.9em;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:0 .25em}
+ul{padding-left:1.2rem}li{margin:.35rem 0}
+section+section{margin-top:4rem;border-top:3px double var(--line);padding-top:1rem}
+</style>
+</head>
+<body>
+<main>
+<nav><a href="../">← Start</a><a href="#de" hreflang="de">Deutsch</a><a href="#en" hreflang="en">English</a></nav>
+<section id="de" lang="de">
+<h1>Datenschutzerklärung für die App „Haushalt“</h1>
+<p>Stand: 12. Oktober 2026 · Android-Paket <code>space.mai.mai_household</code></p>
+<h2>Kurzfassung</h2>
+<p>„Haushalt“ ist eine Haushalts-App mit Einkaufsliste, Aufgaben und Müllkalender, Rezeptbuch und Wochenplan, die du mit anderen Geräten deines Haushalts teilen kannst. Du brauchst kein Konto. Deine Einträge bleiben auf deinem Gerät; wir als Anbieter erhalten keine deiner Daten, betreiben keinen Server für die App und nutzen weder Werbung noch Analyse- oder Tracking-Dienste. Wenige, unten genau beschriebene Funktionen stellen eine Verbindung zu Diensten Dritter her.</p>
+<h2>1. Verantwortlicher</h2>
+<p>Joël Maximilian Mai (Entwicklerkonto „maispace“ bei Google Play)<br>
+Quettinghofstr. 125, 50769 Köln, Deutschland<br>
+E-Mail: joel@maispace.de</p>
+<h2>2. Grundsatz: Deine Daten bleiben auf deinem Gerät</h2>
+<p>Alles, was du in die App eingibst, wird ausschließlich lokal auf deinem Gerät gespeichert und verarbeitet. Es gibt kein Benutzerkonto und keinen Server, an den die App deine Inhalte schickt. Wir haben keinen Zugriff auf deine Daten und können sie weder einsehen noch wiederherstellen.</p>
+<p>Die App hat die Internet-Berechtigung. Sie nutzt sie ausschließlich, um sich mit den Geräten deines Haushalts im selben WLAN direkt abzugleichen (siehe unten); es gibt keinen Server. Zusätzlich nutzt der eingebaute QR-Scanner eine Google-Bibliothek, die Diagnosedaten senden kann, und die Spracheingabe kann den Spracherkennungsdienst deines Geräts nutzen (siehe „Dienste Dritter“).</p>
+<h2>3. Welche Daten die App auf deinem Gerät verarbeitet</h2>
+<ul><li>Einkaufsliste, Läden und Abteilungen, Kaufhistorie für Vorschläge.</li>
+<li>Aufgaben, Bereiche, Müllkalender (auch aus einer <code>.ics</code>-Datei, die du importierst), wer was erledigt hat.</li>
+<li>Rezepte, Sammlungen, Wochenplan.</li>
+<li>Mitglieder des Haushalts (Namen bzw. Spitznamen, die ihr vergebt) und der Haushaltsschlüssel für den Abgleich.</li>
+<li>Einstellungen (z. B. Erinnerungen).</li></ul>
+<p>Ein Teil dieser Daten betrifft andere Menschen (z. B. Namen und Nummern von Kontakten bzw. Namen von Haushaltsmitgliedern). Bitte trage nur ein, was du für deinen persönlichen Gebrauch brauchst.</p>
+<h2>4. Berechtigungen</h2>
+<p>Android fragt dich bei den meisten Berechtigungen um Erlaubnis; du kannst sie jederzeit in den Systemeinstellungen entziehen. Die App nutzt:</p>
+<ul><li><strong>Internet, Netzwerk- und WLAN-Status, Multicast</strong>: für den direkten Abgleich mit den Geräten deines Haushalts im lokalen WLAN (Suche per UDP, Übertragung per HTTP innerhalb des WLANs).</li>
+<li><strong>Kamera</strong>: nur zum Scannen des Einladungs-QR-Codes eines anderen Haushaltsgeräts. Bilder werden nicht gespeichert.</li>
+<li><strong>Mikrofon</strong>: nur wenn du die Spracheingabe für die Einkaufsliste startest.</li>
+<li><strong>Benachrichtigungen, Start nach Neustart, Vibration</strong>: für lokale Erinnerungen (z. B. Müll am Vorabend). Erinnerungen werden auf dem Gerät geplant, nicht über einen Server.</li></ul>
+<p>Die App hat keine Standort- oder Kontakte-Berechtigung. Dateien (z. B. den Müllkalender) wählst du über die Dateiauswahl von Android aus.</p>
+<h2>5. Wann Daten das Gerät verlassen können</h2>
+<p>Daten verlassen dein Gerät nur in den folgenden Fällen, und zwar fast immer durch eine bewusste Aktion von dir:</p>
+<ul><li><strong>Teilen im Haushalt</strong>: Wenn du einen Haushalt per QR-Code teilst, gleichen sich die beteiligten Geräte direkt im selben WLAN ab. Die Daten sind mit dem Haushaltsschlüssel aus dem QR-Code verschlüsselt (AES-256-GCM) und gehen an keinen Server, auch nicht an uns. Alle Geräte des Haushalts sehen dieselbe Einkaufsliste, Aufgaben, Rezepte und Mitgliedernamen.</li>
+<li><strong>Startbildschirm-Widgets</strong>: Die Widgets zeigen Aufgaben, Einkaufsliste und Essensplan. Dieser Auszug liegt im App-Speicher, damit Android ihn anzeigen kann.</li>
+<li><strong>Uhr (Wear OS)</strong>: Nur wenn auf einer gekoppelten Uhr die Uhr-App installiert ist, schickt die App denselben Auszug über die Datenschicht der Google Play-Dienste an die Uhr; Abgehaktes geht auf demselben Weg zurück. Die Uhr-App hat keine Internet-Berechtigung.</li>
+<li><strong>Teilen von Inhalten</strong>: Wenn du etwas über das Teilen-Menü von Android weitergibst, geht es an die App, die du auswählst.</li></ul>
+<h2>6. Dienste Dritter</h2>
+<ul><li><strong>Google ML Kit</strong> (über die Bibliothek für den QR-Scanner): Der QR-Code wird auf dem Gerät erkannt; Kamerabilder werden nicht an Google gesendet. ML Kit überträgt laut Google jedoch technische Diagnose- und Nutzungsdaten (z. B. Gerätemodell, Android-Version, App-Paketname und -Version, Leistungswerte, Fehlercodes, eine Installationskennung) verschlüsselt an Google. Details: <a href="https://developers.google.com/ml-kit/android-data-disclosure">https://developers.google.com/ml-kit/android-data-disclosure</a></li>
+<li><strong>Spracherkennung deines Geräts</strong>: Die Spracheingabe nutzt den Spracherkennungsdienst von Android (meist von Google). Die App fordert zuerst die Erkennung auf dem Gerät an. Ist dafür kein Sprachpaket installiert, versucht sie es einmal mit der Standard-Erkennung; dabei kann der Anbieter des Dienstes die Aufnahme auf seinen Servern verarbeiten. Es gelten dessen Bedingungen. Die App selbst speichert keine Audioaufnahmen.</li>
+<li><strong>Google Play-Dienste (Wearable)</strong>: Übertragung des Uhr-Auszugs, siehe oben.</li>
+<li><strong>Google Play Store</strong>: Wenn du die App über Google Play lädst oder aktualisierst, verarbeitet Google dabei Daten (z. B. dein Google-Konto, Geräteinformationen) in eigener Verantwortung. Es gilt die Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>. Absturzberichte, die du über Android an Google sendest, sehen wir nur in anonymisierter, zusammengefasster Form in der Play Console.</li></ul>
+<h2>7. Speicherung, Sicherheit und Löschung</h2>
+<p>Die Daten liegen im geschützten App-Speicher deines Geräts, auf den andere Apps keinen Zugriff haben. Die Datenbank selbst ist nicht zusätzlich verschlüsselt; der Abgleich zwischen den Geräten ist Ende-zu-Ende-verschlüsselt. Die App ist von Android- bzw. Google-Cloud-Backups ausgenommen.</p>
+<p>Deine Daten bleiben gespeichert, bis du sie in der App löschst, die App-Daten in den Android-Einstellungen löschst oder die App deinstallierst. Danach sind sie auf diesem Gerät unwiederbringlich weg; auf anderen Geräten deines Haushalts bleiben die geteilten Daten erhalten, bis sie dort gelöscht werden.</p>
+<h2>8. Rechtsgrundlagen</h2>
+<p>Wir selbst verarbeiten keine personenbezogenen Daten aus der App. Soweit über die oben genannten Dienste Dritter technische Daten anfallen, geschieht dies, damit du die jeweilige Funktion nutzen kannst (Art. 6 Abs. 1 lit. b DSGVO) bzw. auf Grundlage des berechtigten Interesses an einer funktionierenden, sicheren App (Art. 6 Abs. 1 lit. f DSGVO). Der Zugriff auf Informationen auf deinem Gerät erfolgt nur, soweit er für die von dir gewünschte Funktion unbedingt erforderlich ist (§ 25 Abs. 2 Nr. 2 TDDDG).</p>
+<h2>9. Deine Rechte</h2>
+<p>Du hast nach der DSGVO das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch (Art. 15–21 DSGVO). Da deine Daten nur auf deinem Gerät liegen, kannst du die meisten dieser Rechte direkt selbst ausüben: Du siehst alle Daten in der App und kannst sie ändern und löschen. Für Fragen erreichst du uns unter der oben genannten E-Mail-Adresse.</p>
+<p>Du hast außerdem das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, insbesondere in dem Mitgliedstaat deines Aufenthaltsorts.</p>
+<h2>10. Kinder</h2>
+<p>Die App richtet sich nicht an Kinder unter 16 Jahren. Wir erheben wissentlich keine Daten von Kindern.</p>
+<h2>11. Änderungen</h2>
+<p>Wenn sich die App so ändert, dass diese Erklärung nicht mehr zutrifft, passen wir sie an. Das Datum oben zeigt den aktuellen Stand.</p>
+<h2>12. Kontakt</h2>
+<p>Fragen zum Datenschutz: joel@maispace.de</p>
+</section>
+<section id="en" lang="en">
+<h1>Privacy Policy for the app “Haushalt”</h1>
+<p>Last updated: 12 October 2026 · Android package <code>space.mai.mai_household</code></p>
+<h2>Summary</h2>
+<p>“Haushalt” is a household app with shopping list, chores and waste collection calendar, recipe book and weekly meal plan, which you can share with other devices in your household. No account is needed. Your entries stay on your device; we as the provider receive none of your data, run no server for the app and use no advertising, analytics or tracking services. A few features, described in detail below, connect to third-party services.</p>
+<h2>1. Controller</h2>
+<p>Joël Maximilian Mai (developer account “maispace” on Google Play)<br>
+Quettinghofstr. 125, 50769 Köln, Germany<br>
+E-mail: joel@maispace.de</p>
+<h2>2. Principle: your data stays on your device</h2>
+<p>Everything you enter in the app is stored and processed only locally on your device. There is no user account and no server to which the app sends your content. We have no access to your data and can neither view nor restore it.</p>
+<p>The app has the internet permission. It uses it only to sync directly with your household’s devices on the same Wi-Fi network (see below); there is no server. In addition, the built-in QR scanner uses a Google library that may send diagnostic data, and voice input may use your device’s speech recognition service (see “Third-party services”).</p>
+<h2>3. Data the app processes on your device</h2>
+<ul><li>Shopping list, stores and departments, purchase history for suggestions.</li>
+<li>Chores, areas, waste collection calendar (also from an <code>.ics</code> file you import), who did what.</li>
+<li>Recipes, collections, weekly meal plan.</li>
+<li>Household members (names or nicknames you choose) and the household key used for syncing.</li>
+<li>Settings (e.g. reminders).</li></ul>
+<p>Some of this data concerns other people (e.g. names and numbers of contacts or names of household members). Please only enter what you need for your personal use.</p>
+<h2>4. Permissions</h2>
+<p>Android asks for your consent for most permissions; you can revoke them at any time in the system settings. The app uses:</p>
+<ul><li><strong>Internet, network and Wi-Fi state, multicast</strong>: for direct syncing with your household’s devices on the local Wi-Fi (discovery via UDP, transfer via HTTP within the Wi-Fi network).</li>
+<li><strong>Camera</strong>: only to scan the invitation QR code of another household device. Images are not stored.</li>
+<li><strong>Microphone</strong>: only when you start voice input for the shopping list.</li>
+<li><strong>Notifications, start after reboot, vibration</strong>: for local reminders (e.g. waste collection the evening before). Reminders are scheduled on the device, not via a server.</li></ul>
+<p>The app has no location or contacts permission. You pick files (e.g. the waste calendar) with Android’s file picker.</p>
+<h2>5. When data can leave the device</h2>
+<p>Data leaves your device only in the following cases, almost always through a deliberate action on your part:</p>
+<ul><li><strong>Sharing within the household</strong>: when you share a household via QR code, the devices involved sync directly on the same Wi-Fi network. The data is encrypted with the household key from the QR code (AES-256-GCM) and does not go to any server, including ours. All devices in the household see the same shopping list, chores, recipes and member names.</li>
+<li><strong>Home screen widgets</strong>: the widgets show chores, shopping list and meal plan. This excerpt is stored in the app’s storage so that Android can display it.</li>
+<li><strong>Watch (Wear OS)</strong>: only if the watch app is installed on a paired watch, the app sends the same excerpt to the watch via the data layer of Google Play services; items you tick off travel back the same way. The watch app has no internet permission.</li>
+<li><strong>Sharing content</strong>: when you pass something on via Android’s share menu, it goes to the app you select.</li></ul>
+<h2>6. Third-party services</h2>
+<ul><li><strong>Google ML Kit</strong> (via the QR scanner library): the QR code is recognised on the device; camera images are not sent to Google. According to Google, however, ML Kit transmits technical diagnostic and usage data (e.g. device model, Android version, app package name and version, performance metrics, error codes, an installation identifier) to Google in encrypted form. Details: <a href="https://developers.google.com/ml-kit/android-data-disclosure">https://developers.google.com/ml-kit/android-data-disclosure</a></li>
+<li><strong>Your device’s speech recognition</strong>: voice input uses Android’s speech recognition service (usually provided by Google). The app first requests on-device recognition. If no language pack is installed for it, it tries once with the default recognition; in that case the service provider may process the recording on its servers under its own terms. The app itself does not store audio recordings.</li>
+<li><strong>Google Play services (Wearable)</strong>: transfer of the watch excerpt, see above.</li>
+<li><strong>Google Play Store</strong>: when you download or update the app via Google Play, Google processes data (e.g. your Google account, device information) under its own responsibility. Google’s privacy policy applies: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>. Crash reports that you send to Google via Android are only visible to us in anonymised, aggregated form in the Play Console.</li></ul>
+<h2>7. Storage, security and deletion</h2>
+<p>The data is stored in your device’s protected app storage, which other apps cannot access. The database itself is not additionally encrypted; syncing between devices is end-to-end encrypted. The app is excluded from Android/Google cloud backups.</p>
+<p>Your data remains stored until you delete it in the app, clear the app data in Android’s settings or uninstall the app. After that it is gone for good on this device; shared data remains on the other devices of your household until it is deleted there.</p>
+<h2>8. Legal bases</h2>
+<p>We ourselves do not process any personal data from the app. Where technical data arises through the third-party services named above, this happens so that you can use the respective feature (Art. 6(1)(b) GDPR) or on the basis of our legitimate interest in a functioning, secure app (Art. 6(1)(f) GDPR). Information on your device is accessed only where strictly necessary for the feature you requested (Section 25(2) no. 2 TDDDG).</p>
+<h2>9. Your rights</h2>
+<p>Under the GDPR you have the right of access, rectification, erasure, restriction of processing, data portability and objection (Art. 15–21 GDPR). Because your data is only on your device, you can exercise most of these rights directly yourself: you see all data in the app and can change and delete it. For questions, contact us at the e-mail address above.</p>
+<p>You also have the right to lodge a complaint with a data protection supervisory authority, in particular in the member state of your residence.</p>
+<h2>10. Children</h2>
+<p>The app is not directed at children under 16. We do not knowingly collect data from children.</p>
+<h2>11. Changes</h2>
+<p>If the app changes in a way that makes this policy inaccurate, we will update it. The date at the top shows the current version.</p>
+<h2>12. Contact</h2>
+<p>Privacy questions: joel@maispace.de</p>
+</section>
+</main>
+</body>
+</html>
