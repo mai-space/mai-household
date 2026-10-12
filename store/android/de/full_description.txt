@@ -1,0 +1,43 @@
+Haushalt bringt Einkauf, Aufgaben und Küche in eine App – für Paare, Familien und WGs. Ohne Konto, ohne Cloud, ohne Werbung.
+
+EINKAUFEN
+• Eine gemeinsame Einkaufsliste für alle im Haushalt
+• Artikel landen automatisch in der richtigen Abteilung (Obst & Gemüse, Kühlregal, Getränke …) – und die App merkt sich, wenn du etwas umsortierst
+• Läden wie Aldi, HIT, Rewe und Netto oder eigene Läden als Filter: „Hafermilch nur bei Rewe“
+• Ladenmodus: zeigt nur, was es im Laden gibt, in der Reihenfolge deines Laufwegs – die Reihenfolge lernt aus dem Abhaken
+• Spracheingabe: „Zwei Liter Milch, Eier und Spülmittel bei Rewe“ wird zu drei Einträgen mit Menge und Laden
+
+AUFGABEN & PUTZPLAN
+• Staubsaugen, Bad putzen, Bettwäsche … „alle 7 Tage nach der letzten Erledigung“, feste Wochentage oder einmalig
+• Frische-Balken statt roter Überfällig-Zähler
+• Aufgaben fest zuweisen oder reihum verteilen
+• „Wer hat was gemacht“ zeigt fair, wie die Arbeit verteilt ist
+• Müllkalender mit Restmüll, Bio, Papier, Gelber Sack und Glas – auch als .ics-Kalenderdatei importierbar, mit Erinnerung am Vorabend
+
+KÜCHE
+• Rezeptbuch mit Sammlungen, Favoriten, Tipps und Familiengeschichten
+• Ganzes Rezept als Text einfügen – Zutaten und Schritte werden erkannt
+• Portionen umrechnen, Kochmodus mit Schritt-für-Schritt-Ansicht und Timern
+• Wochenplan: Was gibt es wann? Die Zutaten der Woche mit einem Tipp auf die Einkaufsliste
+
+HEUTE
+Auf einen Blick, was heute dran ist: fällige Aufgaben, Müll für morgen, das heutige Essen und der Stand der Einkaufsliste.
+
+WIDGETS & UHR
+• Homescreen-Widgets für Aufgaben, Einkaufsliste und Essensplan – frei skalierbar, direkt abhaken
+• Wear-OS-Uhr: Kacheln, Komplikationen und eine kleine Liste zum Abhaken am Handgelenk
+
+GEMEINSAM – OHNE CLOUD
+Teilen geht per QR-Code: Einmal scannen, danach gleichen sich die Geräte im selben WLAN direkt und verschlüsselt (AES-256-GCM) ab, solange die App offen ist. Es gibt keinen Server und kein Konto – deine Listen bleiben bei euch. Auch Personen ohne eigenes Handy, zum Beispiel Kinder, lassen sich im Haushalt anlegen.
+
+SICHERUNG
+Eine mit Passwort verschlüsselte Sicherungsdatei erstellen und auf einem neuen Handy wiederherstellen – der Haushalt ist danach ohne neuen QR-Code wieder verbunden.
+
+DATENSCHUTZ
+• Alle Daten bleiben auf deinem Gerät und den Geräten, mit denen du teilst
+• Die Datenbank auf dem Gerät ist verschlüsselt
+• Keine Anmeldung, keine Werbung, keine Analyse-Dienste
+• Mikrofon nur auf Tastendruck für die Spracheingabe, Kamera nur zum Scannen des QR-Codes
+• Erinnerungen sind sparsam: eine Tageszusammenfassung und der Müll am Vorabend – sonst nichts
+
+Die App spricht Deutsch und Englisch, passend zur Systemsprache.

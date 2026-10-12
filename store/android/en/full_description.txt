@@ -1,0 +1,43 @@
+Haushalt brings shopping, chores and cooking together in one app – for couples, families and flatshares. No account, no cloud, no ads.
+
+SHOPPING
+• One shared shopping list for everyone in the household
+• Items are sorted into the right aisle automatically (fruit & veg, dairy, drinks …) – and the app remembers when you move something
+• Stores such as Aldi, HIT, Rewe and Netto, or your own, as filters: “oat milk only at Rewe”
+• Store mode: shows only what that store has, in the order you walk through it – the order learns from what you tick off
+• Voice input: “Two litres of milk, eggs and washing-up liquid at Rewe” becomes three entries with amount and store
+
+CHORES
+• Vacuuming, cleaning the bathroom, changing the bedding … “every 7 days after it was last done”, fixed weekdays or one-off
+• Freshness bars instead of red overdue counters
+• Assign chores to someone or take turns
+• “Who did what” shows fairly how the work is shared
+• Bin calendar for general waste, organic, paper, packaging and glass – also importable from an .ics calendar file, with a reminder the evening before
+
+KITCHEN
+• Recipe book with collections, favourites, tips and family stories
+• Paste a whole recipe as text – ingredients and steps are recognised
+• Scale servings, cooking mode with step-by-step view and timers
+• Meal plan: what’s for dinner when? Put the week’s ingredients on the shopping list with one tap
+
+TODAY
+At a glance: chores due today, bins for tomorrow, today’s meal and the state of the shopping list.
+
+WIDGETS & WATCH
+• Home screen widgets for chores, shopping list and meal plan – freely resizable, tick off directly
+• Wear OS watch: tiles, complications and a small list to tick off on your wrist
+
+SHARED – WITHOUT A CLOUD
+Sharing works with a QR code: scan once, then devices on the same Wi-Fi sync directly and encrypted (AES-256-GCM) while the app is open. There is no server and no account – your lists stay with you. People without their own phone, such as children, can be added to the household too.
+
+BACKUP
+Create a password-encrypted backup file and restore it on a new phone – the household reconnects without a new QR code.
+
+PRIVACY
+• All data stays on your device and the devices you share with
+• The database on your device is encrypted
+• No sign-up, no ads, no analytics
+• Microphone only when you tap for voice input, camera only for scanning the QR code
+• Reminders are sparing: one daily summary and the bins the evening before – nothing else
+
+The app speaks German and English, following your system language.
