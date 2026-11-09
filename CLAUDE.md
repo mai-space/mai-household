@@ -42,6 +42,10 @@ sich weiter abgleichen können**.
   Restore bleibt die Geräte-ID erhalten, geteilte Zeilen bekommen neue `seq`
   über dem bisherigen Zähler und `peers` wird geleert — sonst übersehen
   Partnergeräte Änderungen.
+- **Mai Launcher (`SummaryProvider`, Authority `space.mai.mai_household.summary`, Spalte
+  `json`)** — liefert den Widget-Stand nur an `space.mai.*`-Apps mit gleicher
+  Signatur. Authority, Spalte und Stand-Format nie ändern (nur erweitern);
+  der Launcher kann eine ältere oder neuere Version sein.
 
 ## Arbeitsweise
 
